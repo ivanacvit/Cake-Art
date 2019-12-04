@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Footer as ThemeFooter } from "theme-ui"
+import { jsx, Footer as ThemeFooter } from "theme-ui"
 
 import Container from "./container"
 import { GitHub, Gatsby } from "./icons"

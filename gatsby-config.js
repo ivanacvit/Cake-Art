@@ -8,10 +8,6 @@ module.exports = {
         path: '/'
       },
       {
-        text: 'ABOUT US',
-        path: '/about'
-      },
-      {
         text: 'CAKE GALLERY',
         path: '/cakegallery'
       },
@@ -34,6 +30,13 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `content`,
+          path: `${__dirname}/content`,
+        },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
@@ -44,6 +47,10 @@ module.exports = {
         // sets path for generated page
         basePath: "/design-system",
       },
+    },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/content-dynamic/*`] },
     },
     {
       resolve: `gatsby-plugin-manifest`,
