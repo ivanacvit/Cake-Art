@@ -4,15 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { jsx } from "theme-ui"
 
 import BackgroundImage from "gatsby-background-image"
-import Container from "../components/container"
-
-const sliderConfig = {
-    dots: true,
-    infinite: true,
-    speed: 750,
-    slidesToScroll: 1,
-    autoplay: true
-  };
+import Container from "../container"
   
 const Background = () => {
 
@@ -34,21 +26,21 @@ const data = useStaticQuery(graphql`
     <BackgroundImage
     fluid={heroImage.sharp.fluid}
     sx={{
-      height: [150, 250, 250],
-       
+      height: [150, 250, 350],
     }}
   >
     <div
       sx={{
         height: "100%",
+        width: "100%",
       }}
     >
       <Container>
         <h1
           sx={{
             m: 0,
-            pt: [3, 4],
-            fontSize: [5, 6, 7],
+            pt: [4, 4, 5],
+            fontSize: [4, 6, 7],
             fontWeight: "semibold",
             color: "white",
           }}

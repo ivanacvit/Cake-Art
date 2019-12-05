@@ -1,17 +1,22 @@
 import { tailwind } from "@theme-ui/presets"
+import { keyframes } from "@emotion/core"
 
 const theme = {
   ...tailwind,
   sizes: {
     ...tailwind.sizes,
     container: "1024px",
-    logo: "90px",
-    navBar: "90px",
+    logo: "44px",
+    navBar: "95px",
     navLinkBorder: "3px",
   },
   colors: {
     ...tailwind.colors,
     accent: "#f50057",
+  },
+  lineHeights: {
+    ...tailwind.lineHeights,
+    navLink: 3,
   },
   fontWeights: {
     ...tailwind.fontWeights,
@@ -21,24 +26,33 @@ const theme = {
     ...tailwind.styles,
     blockquote: {
       borderLeft: theme => `5px solid ${theme.colors.accent}`,
-      paddingLeft: 2,
+      paddingLeft: 3,
       marginLeft: 0,
       marginRight: 0,
       fontStyle: "italic",
     },
     h1: {
       ...tailwind.styles.h1,
-      py: 4,
+      fontSize: [4, 4, 5, 6],
+      mt: [4, 5],
     },
     h2: {
       ...tailwind.styles.h2,
-      py: 3,
+      fontSize: [3, 3, 4, 4],
+      mt: [4, 5],
     },
     h3: {
       ...tailwind.styles.h3,
-      py: 1,
+      fontSize: [2, 2, 3, 3],
+      mt: 4,
+    },
+    h4: {
+      ...tailwind.styles.h4,
+      fontSize: [1, 1, 2, 2],
+      mt: 4,
     },
   },
+  
   cards: {
     primary: {
       padding: 2,

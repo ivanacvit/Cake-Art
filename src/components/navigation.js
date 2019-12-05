@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, useThemeUI, Header } from "theme-ui"
-import { useRef, useState } from "react"
+import { useRef, useState,useEffect  } from "react"
 import { Link } from "gatsby"
 
 import logo from "../assets/logo.png"
@@ -13,7 +13,7 @@ const LogoLink = () => (
     <img
       src={logo}
       sx={{
-        height: "logo",
+        height: ["logo",70,90],
         width: "auto",
       }}
     />
@@ -35,7 +35,7 @@ const NavLink = ({ ...prop }) => (
   />
 )
 
-const VisibleNavLink = ({ ...prop }) => {
+const VisibleNavLink = ({ partiallyActive = false,...prop }) => {
   const { theme } = useThemeUI()
 
   return (
@@ -49,17 +49,18 @@ const VisibleNavLink = ({ ...prop }) => {
         borderTop: theme => `${theme.sizes.navLinkBorder} solid transparent`,
         borderBottom: theme => `${theme.sizes.navLinkBorder} solid transparent`,
         "&:hover": {
-          color: "pink",
+          color: "#F78DA7",
         },
       }}
       activeStyle={{
-        color: "pink",
+        color: "#F78DA7",
       }}
+      partiallyActive={partiallyActive}
     />
   )
 }
 
-const HiddenNavLink = ({ ...prop }) => {
+const HiddenNavLink = ({ partiallyActive = false, ...prop }) => {
   const { theme } = useThemeUI()
 
   return (
@@ -71,12 +72,13 @@ const HiddenNavLink = ({ ...prop }) => {
         py: 2,
         borderLeft: theme => `${theme.sizes.navLinkBorder} solid transparent`,
         "&:hover": {
-          color: "pink",
+          color: "#F78DA7",
         },
       }}
       activeStyle={{
-        color: "pink",
+        color: "#F78DA7",
       }}
+      partiallyActive={partiallyActive}
     />
   )
 }
@@ -102,7 +104,7 @@ const MoreButton = ({ onClick, width = 50 }) => (
         stroke: "black",
         height: theme =>
           `calc(calc(${theme.sizes.navBar} - 2 * ${theme.sizes.navLinkBorder})/4)`,
-        width: "25px",
+        width: "auto",
       }}
     />
   </div>
@@ -128,8 +130,12 @@ const Triangle = () => (
 
 const VisibleItems = ({ visibleItems }) =>
   visibleItems.map(menuItem => (
-    <VisibleNavLink key={menuItem.path} to={menuItem.path}>
-      {menuItem.text}
+    <VisibleNavLink
+      key={menuItem.path}
+      to={menuItem.path}
+      partiallyActive={menuItem.partiallyActive}
+    >
+       {menuItem.text}
     </VisibleNavLink>
   ))
 
@@ -159,18 +165,31 @@ const VisibleItems = ({ visibleItems }) =>
       >
         <Triangle />
         {menu.hiddenItems.map(menuItem => (
-          <HiddenNavLink key={menuItem.path} to={menuItem.path}>
-            {menuItem.text}
-          </HiddenNavLink>
-        ))}
-      </div>
+        <HiddenNavLink
+          key={menuItem.path}
+          to={menuItem.path}
+          partiallyActive={menuItem.partiallyActive}
+        >
+          {menuItem.text}
+        </HiddenNavLink>
+      ))}
+    </div>
     )
   }
 
   const Nav = ({ menuItems }) => {
     const containerRef = useRef(null)
     const [open, setOpen] = useState(false)
+    const [visibility, setVisibility] = useState(0)
+  
     const { menu } = useResponsiveMenu({ containerRef, menuItems })
+  
+    // to prevent a flash of the responsive nav bar
+    // we hide it initially (using the "opacity" property)
+    // until a resized version is ready to be shown
+    useEffect(() => {
+      setVisibility("visible")
+    }, [visibility])
   
     const isHiddenEmpty = menu.hiddenItems.length === 0
   
@@ -187,6 +206,8 @@ const VisibleItems = ({ visibleItems }) =>
           flex: "auto",
           ml: [3, 4],
           overflowX: "auto",
+          visibility,
+          
         }}
       >
         <VisibleItems visibleItems={menu.visibleItems} />
@@ -200,12 +221,10 @@ const VisibleItems = ({ visibleItems }) =>
   }
 
 const Navigation = ({ menuItems }) => {
-  const { theme } = useThemeUI()
   return (
     <Header
       sx={{
-        justifyContent: "space-between",
-        alignContent: "center",
+        orderBottom: theme => theme.borders.header,
         position: "relative",
       }}
     >

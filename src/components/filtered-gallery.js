@@ -10,7 +10,7 @@ import Img from "gatsby-image"
 const getCake = imageBase =>
   imageBase
     .split("-")
-    .slice(0, -2)
+    .slice(0, -2) //(1, -2) za prigodu
     .map(item => item.charAt(0).toUpperCase() + item.slice(1))
     .join(" ")
 
@@ -77,7 +77,7 @@ const FilteredGallery = ({ images = [], ...prop }) => {
         </label>
       </div>
 
-      <Grid gap={[4]} columns={[1, 2, 3, 4]}>
+      <Grid gap={[4]} columns={[2, 3, 4]}>
         {filteredImages.map((image, index) => {
           return (
             image.cake && (
