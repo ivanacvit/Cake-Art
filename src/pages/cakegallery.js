@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import FilteredGallery from "../components/filtered-gallery"
+import Container from "../components/container"
 
 const CakeGallery = ({ data }) => {
   const { imageFiles } = data
@@ -12,11 +13,14 @@ const CakeGallery = ({ data }) => {
   return (
     <>
       <Layout>
-        <h2
-        >
+        <Container>
+        
+        <h2>
           GALLERY
         </h2>
         <FilteredGallery images={imageFiles.images} />
+        
+        </Container>
       </Layout>
     </>
   )

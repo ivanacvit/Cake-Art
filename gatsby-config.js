@@ -8,12 +8,19 @@ module.exports = {
         path: '/'
       },
       {
+        text: 'ABOUT US',
+        path: '/about',
+        partiallyActive: true,
+      },
+      {
         text: 'CAKE GALLERY',
-        path: '/cakegallery'
+        path: '/cakegallery',
+        partiallyActive: true,
       },
       {
         text: 'BLOG&RECIPES',
-        path: '/blog'
+        path: '/blog',
+        partiallyActive: true,
       },
      
      {
@@ -37,7 +44,27 @@ module.exports = {
           path: `${__dirname}/content`,
         },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`,
+      },
+    },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,

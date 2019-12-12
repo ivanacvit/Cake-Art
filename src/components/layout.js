@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
         <Navigation menuItems={data.site.siteMetadata.menuItems} />
 
         <Main>
-          <Container>{children}</Container>
+          {children}
         </Main>
 
         <Footer />

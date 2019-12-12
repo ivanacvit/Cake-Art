@@ -2,8 +2,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { jsx } from "theme-ui"
-
 import BackgroundImage from "gatsby-background-image"
+
 import Container from "../container"
   
 const Background = () => {
@@ -26,15 +26,9 @@ const data = useStaticQuery(graphql`
     <BackgroundImage
     fluid={heroImage.sharp.fluid}
     sx={{
-      height: [150, 250, 350],
+      height: [150, 250, 400],
     }}
   >
-    <div
-      sx={{
-        height: "100%",
-        width: "100%",
-      }}
-    >
       <Container>
         <h1
           sx={{
@@ -48,7 +42,6 @@ const data = useStaticQuery(graphql`
           WE MAKE <br></br>DELICIOUS CAKES
         </h1>
       </Container>
-    </div>
   </BackgroundImage>
   )
 }

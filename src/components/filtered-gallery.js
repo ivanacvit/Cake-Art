@@ -10,11 +10,11 @@ import Img from "gatsby-image"
 const getCake = imageBase =>
   imageBase
     .split("-")
-    .slice(0, -2) //(1, -2) za prigodu
+    .slice(0, -2)
     .map(item => item.charAt(0).toUpperCase() + item.slice(1))
     .join(" ")
 
-const FilteredGallery = ({ images = [], ...prop }) => {
+const FilteredGallery = ({ images = [] }) => {
   const [search, setSearch] = React.useState("")
   const inputRef = React.useRef()
 
@@ -37,7 +37,6 @@ const FilteredGallery = ({ images = [], ...prop }) => {
   return (
     <>
       <div
-        {...prop}
         sx={{
           display: "flex",
           paddingTop: 2,
