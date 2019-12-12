@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import Container from "../components/container"
 import Layout from "../components/layout"
 import Blog from "../components/blog"
-import Search from "../components/search"
+
 
 const BirthdayCake = ({data}) =>{
   return(
