@@ -68,6 +68,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
+  
     {
       resolve: "gatsby-theme-style-guide",
       options: {

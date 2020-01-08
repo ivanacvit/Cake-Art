@@ -4,7 +4,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const Blog = props => {
+const BlogTest = props => {
   return (
     <>
       <section
@@ -16,10 +16,43 @@ const Blog = props => {
       >
         <div
           sx={{
-            float: "right",
+            pt:[3],
+            width: "400px",
+            "@media (max-width: 600px)": {
+              width: "0px",
+              float: "right",
+            },
+            "@media (min-width: 700px) and (max-width: 1000px)": {
+                width: "600px",
+                paddingTop:"20px"
+              
+              },
+              
           }}
         >
-          <Styled.h4 sx={{ mt: 0}}>
+          <Link to={props.to}>
+            <Img
+              fluid={props.image}
+              sx={{
+              
+                "@media (max-width: 600px)": {
+                  display: "none",
+                },
+              }}
+            />
+          </Link>
+        </div>
+
+        <div
+          sx={{
+            float: "right",
+            pl: [3],
+            "@media (max-width: 600px)": {
+              pl: [0],
+            },
+          }}
+        >
+          <Styled.h4 sx={{ mt: 0 }}>
             <Link
               sx={{
                 textDecoration: "none",
@@ -62,4 +95,9 @@ const Blog = props => {
   )
 }
 
-export default Blog
+export default BlogTest
+
+/* "@media (min-width: 400px)": {
+    color: `blue`,
+  },
+}} */
