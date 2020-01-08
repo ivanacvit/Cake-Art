@@ -1,9 +1,10 @@
 ---
 title: "Rainbow Cake"
 image: "../../../content/images/birthday/rainbowCake-birthday-cake-16.jpg"
-keywords: "birthday"
+date: "November 21, 2018"
+keywords: "rainbow"
 ---
-#Birthday Cakes
+##Birthday Cakes
 ---
 
 ##Rainbow Cake

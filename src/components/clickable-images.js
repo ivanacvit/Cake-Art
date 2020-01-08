@@ -6,8 +6,6 @@ import { Grid, Card } from "@theme-ui/components"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-import Container from "./container"
-
 const ClickableImage = ({children, ...prop}) => {
   const data = useStaticQuery(graphql`
     {

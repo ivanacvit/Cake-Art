@@ -1,9 +1,11 @@
 ---
 title: "Colorful Cake"
 image: "../../../content/images/birthday/colorfullCake-birthday-cake-12.webp"
+date: "November 10, 2019"
 keywords: "colorful"
+
 ---
-#Birthday Cakes
+##Birthday Cakes
 ---
 
 ##Colorful Cake

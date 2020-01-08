@@ -1,7 +1,8 @@
 ---
 title: "Lemon Cake"
 image: "../../../content/images/wedding/lemonCake-wedding-cake-00.jpg"
-keywords: "colorful"
+date: "November 16, 2019"
+keywords: "lemon"
 ---
 #Wedding Cakes
 ---

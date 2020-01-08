@@ -1,9 +1,10 @@
 ---
 title: "Banana Split Cupcake"
 image: "../../../content/images/birthday/bananaSplitCupcakes-birthday-cake-10.jpg"
-keywords: "birthday"
+date: "August 11, 2019"
+keywords: "banana split"
 ---
-#Birthday Cakes
+##Birthday Cakes
 ---
 
 ##Banana Split Cupcake

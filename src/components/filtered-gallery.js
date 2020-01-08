@@ -6,6 +6,8 @@ import matchSorter from "match-sorter"
 import debounce from "debounce"
 import Img from "gatsby-image"
 
+import SearchIcon from "./search-icon"
+
 // extract cake from the corresponding filenames
 const getCake = imageBase =>
   imageBase
@@ -54,13 +56,13 @@ const FilteredGallery = ({ images = [] }) => {
         >
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search cake"
             ref={inputRef}
             // autoFocus={true}
             onChange={debounce(() => setSearch(inputRef.current.value), 200)}
             sx={{
               py: 2,
-              paddingLeft: 3,
+              paddingLeft: 4,
               overflow: "hidden",
               borderWidth: 0,
               color: "text",
@@ -68,8 +70,20 @@ const FilteredGallery = ({ images = [] }) => {
               fontWeight: "medium",
               "&:focus": {
                 outline: "none",
-                backgroundColor: "white",
+                backgroundColor: "#FFEFF3",
               },
+            }}
+          />
+          <SearchIcon
+            sx={{
+              fill: "grey",
+              position: "absolute",
+              left: "5px",
+              top: "50%",
+              width: 4,
+              height: 4,
+              pointerEvents: "none",
+              transform: "translateY(-50%)",
             }}
           />
         

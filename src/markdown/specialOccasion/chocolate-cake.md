@@ -1,7 +1,8 @@
 ---
 title: "Chocolate Cake"
 image: "../../../content/images/special-occasion/chocolateCake-specialOccasion-cake-20.jpg"
-keywords: "colorful"
+date: "October 2, 2019"
+keywords: "chocolate"
 ---
 #Special Occasion Cakes
 ---
