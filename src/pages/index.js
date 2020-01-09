@@ -9,7 +9,7 @@ import Container from "../components/container"
 import ClickableImages from "../components/clickable-images"
 
 const Index = ({ data }) => {
-  const { homeGallery, homeService } = data
+  const { homeGallery } = data
   const { theme } = useThemeUI()
   return (
     <>
@@ -20,30 +20,26 @@ const Index = ({ data }) => {
           <HomeGallery images={homeGallery.images} />
 
           <ClickableImages
-          sx={{
-            textAlign: "center",
-            margin: [2, 5],
-          }}>
-            
-              
-            
-              <h2
-                sx={{
-                  m: 0,
-                  pt: [4, 5],
-                  fontSize: [3, 3, 4, 4],
-                  fontWeight: "medium",
-                  letterSpacing: "tight",
-                }}
-              >
-                OUR SERVICES
-              </h2>
-            
+            sx={{
+              textAlign: "center",
+              margin: [2, 5],
+            }}
+          >
+            <h2
+              sx={{
+                m: 0,
+                pt: [4, 5],
+                fontSize: [3, 3, 4, 4],
+                fontWeight: "medium",
+                letterSpacing: "tight",
+              }}
+            >
+              OUR SERVICES
+            </h2>
           </ClickableImages>
-
+        
         </Container>
       </Layout>
-
     </>
   )
 }

@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 
 import Container from "../container"
 import Button from "../button"
+import "../../../styles/image-hover.css"
 
 const HomeGallery = ({ images = [] }) => {
   
@@ -47,10 +48,13 @@ const HomeGallery = ({ images = [] }) => {
         {processedImages.map((image) => {
           return (
               <Card key={image.id} >
+                 <div className="hovereffect">
                 <Img
+                  className="img-responsive"
                   key={image.id}
                   fluid={{ ...image.sharp.fluid, aspectRatio: 1 / 1 }}
                 />
+                </div>
               </Card> 
           )
         })}

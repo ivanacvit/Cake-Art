@@ -6,7 +6,10 @@ import { Grid, Card } from "@theme-ui/components"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const ClickableImage = ({children, ...prop}) => {
+import "../../styles/image-hover.css"
+import Container from "../components/container"
+
+const ClickableImage = ({ children, ...prop }) => {
   const data = useStaticQuery(graphql`
     {
       birthdayImage: file(
@@ -15,16 +18,14 @@ const ClickableImage = ({children, ...prop}) => {
         }
       ) {
         sharp: childImageSharp {
-          fluid(maxWidth: 150) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
       }
 
       weddingImage: file(
-        relativePath: {
-          eq: "images/wedding/weddingCake-wedding-cake-03.jpeg"
-        }
+        relativePath: { eq: "images/wedding/weddingCake-wedding-cake-03.jpeg" }
       ) {
         sharp: childImageSharp {
           fluid(maxWidth: 400) {
@@ -51,75 +52,56 @@ const ClickableImage = ({children, ...prop}) => {
 
   return (
     <>
-      <div {...prop}>
-      {children}
-      </div>
-      
+      <Container>
+        <div {...prop}>{children}</div>
 
-      <Grid gap={[3,4,5]} columns={[2, 3, 3]}> 
-        <Link to="birthday-cake">
-          <Card >
-          <Img fluid={birthdayImage.sharp.fluid}></Img>
-          <p sx={{ 
-           mt: 1, 
-           mb: 0, 
-           fontWeight: "medium",
-           letterSpacing: "tight",
-           color: "grey",
-           display: "inline-block",
-           textDecoration: "none",
-            "&:hover": {
-              
-              color: "#F78DA7",
-            },}}>
+        <Grid gap={[3, 4, 5]} columns={[2, 3, 3]}>
+          <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={birthdayImage.sharp.fluid}
+              ></Img>
+              <div className="overlay">
+                <Link to="birthday-cake" className="info">
                   Birthday Cakes
-          </p>
+                </Link>
+              </div>
+            </div>
           </Card>
-        </Link>
 
-        <Link to="wedding-cake">
-          <Card 
-          >
-          <Img fluid={weddingImage.sharp.fluid}></Img>
-          <p sx={{ 
-           mt: 1, 
-           mb: 0, 
-           fontWeight: "medium",
-           letterSpacing: "tight",
-           color: "grey",
-           display: "inline-block",
-           textDecoration: "none",
-            "&:hover": {
-              
-              color: "#F78DA7",
-            },}}>
+          <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={weddingImage.sharp.fluid}
+              ></Img>
+              <div className="overlay">
+                <Link to="wedding-cake" className="info">
                   Wedding Cakes
-          </p>
+                </Link>
+              </div>
+            </div>
           </Card>
-        </Link>
 
-        <Link to="special-occasion">
-          <Card >
-          <Img fluid={specialImage.sharp.fluid}></Img>
-          <p sx={{ 
-            mt: 1, 
-            mb: 0, 
-            fontWeight: "medium",
-            letterSpacing: "tight",
-            color: "grey",
-            display: "inline-block",
-            textDecoration: "none",
-            "&:hover": {
-              color: "#F78DA7",
-            },}}>
-                  Special Occasions
-          </p>
+          <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={specialImage.sharp.fluid}
+              ></Img>
+              <div className="overlay">
+                <Link to="special-occasion" className="info">
+                  SpecialOccasion
+                </Link>
+              </div>
+            </div>
           </Card>
-        </Link>
-      </Grid>
+        </Grid>
+      </Container>
     </>
   )
 }
 
 export default ClickableImage
- //gap pomiče navigaciju
+//gap pomiče navigaciju

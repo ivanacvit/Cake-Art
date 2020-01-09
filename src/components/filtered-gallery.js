@@ -5,7 +5,9 @@ import React, { useRef, useState, useMemo } from "react"
 import matchSorter from "match-sorter"
 import debounce from "debounce"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
+import "../../styles/image-hover.css"
 import SearchIcon from "./search-icon"
 
 // extract cake from the corresponding filenames
@@ -95,10 +97,13 @@ const FilteredGallery = ({ images = [] }) => {
           return (
             image.cake && (
               <Card key={image.id}>
+                <div className="hovereffect">
                 <Img
+                className="img-responsive"
                   key={image.id}
                   fluid={{ ...image.sharp.fluid, aspectRatio: 1 / 1 }}
                 />
+                </div>
               </Card>
             )
           )
