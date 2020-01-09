@@ -92,7 +92,7 @@ const ClickableImage = ({ children, ...prop }) => {
               ></Img>
               <div className="overlay">
                 <Link to="special-occasion" className="info">
-                  SpecialOccasion
+                  Special Occasion
                 </Link>
               </div>
             </div>
