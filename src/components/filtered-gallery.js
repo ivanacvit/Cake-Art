@@ -46,7 +46,6 @@ const FilteredGallery = ({ images = [] }) => {
           paddingTop: 2,
           marginBottom: 2,
           borderBottom: `1px solid pink`,
-          
         }}
       >
         <label 
@@ -92,7 +91,7 @@ const FilteredGallery = ({ images = [] }) => {
         </label>
       </div>
 
-      <Grid gap={[4]} columns={[2, 3, 4]}>
+      <Grid gap={[4]} columns={[2, 3, 4]} sx = {{pt:3}}>
         {filteredImages.map((image, index) => {
           return (
             image.cake && (

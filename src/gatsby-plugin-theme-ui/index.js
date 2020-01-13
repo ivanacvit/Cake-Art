@@ -1,6 +1,13 @@
 import { tailwind } from "@theme-ui/presets"
 import { keyframes } from "@emotion/core"
 
+const placeholderTwinkle = keyframes`
+  0% { opacity: 0.2 }
+  50% { opacity: 0.4 }
+  100% { opacity: 0.2 }
+`
+
+
 const theme = {
   ...tailwind,
   sizes: {
@@ -54,10 +61,18 @@ const theme = {
   },
   
   cards: {
-    primary: {
+    primary: {},
+
+    secondary: {
       padding: 2,
-      borderRadius: 2,
-      
+      borderRadius: 0,
+      boxShadow: theme => `0 0 8px ${theme.colors.muted}`,
+    },
+
+    placeholder: {
+      padding: 2,
+      animation: `${placeholderTwinkle} 2s ease infinite`,
+      boxShadow: theme => `0 0 8px ${theme.colors.placeholder}`,
     },
   },
   shadows: {

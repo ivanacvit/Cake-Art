@@ -8,11 +8,6 @@ module.exports = {
         path: '/'
       },
       {
-        text: 'ABOUT US',
-        path: '/about',
-        partiallyActive: true,
-      },
-      {
         text: 'CAKE GALLERY',
         path: '/cakegallery',
         partiallyActive: true,
@@ -24,9 +19,15 @@ module.exports = {
       },
      
      {
-       text: 'CONTACT US',
-       path: '/contact'
-     },  
+       text: 'LOGIN',
+       path: '/private',
+       partiallyActive: true,
+     }, 
+     {
+      text: 'COMMENT',
+      path: '/comment',
+      private: true,
+    }, 
      ]
   },
   plugins: [

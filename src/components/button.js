@@ -13,7 +13,7 @@ return(
         padding: "12px 28px",
         borderRadius: "3px",
         cursor: "pointer",
-        fontSize: "14px",
+        fontSize: "inherit",
         marginLeft:"auto",
         marginRight:"auto",
         display:"block",

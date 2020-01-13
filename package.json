@@ -13,6 +13,7 @@
     "@theme-ui/presets": "^0.2.44",
     "bootstrap": "^4.4.1",
     "debounce": "^1.2.0",
+    "disqus-react": "^1.0.7",
     "gatsby": "^2.16.1",
     "gatsby-background-image": "^0.9.7",
     "gatsby-image": "^2.2.34",
@@ -40,10 +41,12 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-slick": "^0.25.2",
+    "react-style-tag": "^2.0.1",
     "slick-carousel": "^1.8.1",
     "theme-ui": "^0.2.49"
   },
   "devDependencies": {
+    "gatsby-plugin-just-comments": "^0.2.3",
     "prettier": "^1.18.2"
   },
   "keywords": [

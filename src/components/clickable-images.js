@@ -52,7 +52,14 @@ const ClickableImage = ({ children, ...prop }) => {
 
   return (
     <>
-      <Container>
+      <div
+        sx={{
+          width: "100%",
+          maxWidth: "container",
+          margin: "0 auto",
+          px: [0],
+        }}
+      >
         <div {...prop}>{children}</div>
 
         <Grid gap={[3, 4, 5]} columns={[2, 3, 3]}>
@@ -98,7 +105,7 @@ const ClickableImage = ({ children, ...prop }) => {
             </div>
           </Card>
         </Grid>
-      </Container>
+      </div>
     </>
   )
 }

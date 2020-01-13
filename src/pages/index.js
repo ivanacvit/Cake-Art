@@ -13,7 +13,9 @@ const Index = ({ data }) => {
   const { theme } = useThemeUI()
   return (
     <>
+  
       <Layout>
+        
         <Background />
 
         <Container>

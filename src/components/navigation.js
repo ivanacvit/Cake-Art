@@ -2,7 +2,6 @@
 import { jsx, useThemeUI, Header } from "theme-ui"
 import { useRef, useState,useEffect  } from "react"
 import { Link } from "gatsby"
-
 import logo from "../assets/logo.png"
 import more from "../assets/more.svg"
 import Container from "./container"

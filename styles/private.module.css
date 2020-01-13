@@ -1,0 +1,15 @@
+.Logout {
+  position:relative;
+  background-color:white;
+  color: #F78DA7;
+  border:1px solid #F78DA7;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-size: inherit;
+  padding: 12px 28px;
+  }
+  
+  .Logout:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.24)
+  }

@@ -57,7 +57,9 @@ const Layout = ({ children }) => {
         })}
       />
       <SiteContainer>
-        <Navigation menuItems={data.site.siteMetadata.menuItems} />
+        <Navigation menuItems={data.site.siteMetadata.menuItems} 
+          
+        />
 
         <Main>
           {children}
