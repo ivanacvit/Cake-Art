@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React, { Component } from "react";
 import { navigate, Link } from "gatsby";
 
@@ -65,12 +67,20 @@ class Login extends Component {
           value={"Log in"}
         />
         <label>
-        <p className={styles.Text}>Or register here{" "} </p>
-        <Link to="/register">
-          <Button sx={{ textDecorationColor: "white" }}>Register</Button>
-      </Link>
+        <p className={styles.Text}>or create an account here{" "} </p>
+       
          
         </label>
+        <Link to="/register" className={styles.LoginForm__button}>
+          <button sx={{
+            backgroundColor:"white",
+            color: "#F78DA7",
+            border:"white",
+            cursor: "pointer",
+            fontSize: "inherit",
+            
+          }} >Create an account</button>
+      </Link>
       </form>
       </Container>
       </>
