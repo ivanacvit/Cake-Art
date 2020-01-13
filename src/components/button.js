@@ -7,6 +7,7 @@ const Button = ({children}, ...prop) => {
 return(
     <button sx={{
       ...prop,
+      outline:"0",
         color:"#F78DA7",
         border:"1px solid #F78DA7",
         background:"transparent",

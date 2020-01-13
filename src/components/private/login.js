@@ -78,6 +78,7 @@ class Login extends Component {
             border:"white",
             cursor: "pointer",
             fontSize: "inherit",
+            outline:"0"
             
           }} >Create an account</button>
       </Link>

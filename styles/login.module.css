@@ -8,7 +8,7 @@
     justify-items: stretch;
     max-width: 400px;
     margin: 0 auto;
-    padding: 10px
+   
   }
   
   .LoginForm__input {
@@ -33,6 +33,7 @@
   }
   
   .LoginForm__button {
+    outline:0;
     background-color:white;
     color: #F78DA7;
     border:1px solid #F78DA7;
