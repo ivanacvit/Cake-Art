@@ -9,6 +9,7 @@ import Login from "../components/private/login"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import Comment from "./comment"
+
 import {
   handleLogin,
   handleLogout,
@@ -18,20 +19,43 @@ import styles from "../../styles/private.module.css"
 
 const Logout = () => (
   <>
-  <div>
-  <p>You are logged in.</p>
-  <Link
-    to="/"
-    onClick={event => {
-      event.preventDefault()
-      handleLogout()
-      navigate("/")
-    }}
-    className={styles.Logout}
-  >
-    Logout
-  </Link>
-  </div>
+    <div
+      sx={{
+        paddingTop: [5],
+        textAlign: "center",
+      }}
+    >
+      <p
+        sx={{
+          color: "grey",
+          letterSpacing: "tight",
+          padding: "0px",
+          magrin: "0px"
+        }}
+      >
+        You are logged in.
+      </p>
+      <p
+        sx={{
+          color: "grey",
+          letterSpacing: "tight",
+          paddingBottom: "20px",
+        }}
+      >
+        If you want log out, please click here:
+      </p>
+      <Link
+        to="/"
+        onClick={event => {
+          event.preventDefault()
+          handleLogout()
+          navigate("/")
+        }}
+        className={styles.Logout}
+      >
+        Logout
+      </Link>
+    </div>
   </>
 )
 
@@ -48,14 +72,6 @@ export default () => (
             <Login private="/comment" handleLogin={handleLogin} />
           </>
         )}
-
-        <Router>
-          <PrivateRoute
-            path="/comment"
-            render={Comment}
-            redirect={"/private"}
-          />
-        </Router>
       </Container>
     </Layout>
   </>

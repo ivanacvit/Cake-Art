@@ -17,17 +17,18 @@ module.exports = {
         path: '/blog',
         partiallyActive: true,
       },
-     
+      {
+        text: 'COMMENT US',
+        path: '/comment',
+        partiallyActive: true,
+      },
      {
        text: 'LOGIN',
        path: '/private',
        partiallyActive: true,
      }, 
-     {
-      text: 'COMMENT',
-      path: '/comment',
-      private: true,
-    }, 
+    
+     
      ]
   },
   plugins: [

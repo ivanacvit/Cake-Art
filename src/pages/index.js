@@ -38,7 +38,7 @@ const Index = ({ data }) => {
             >
               OUR SERVICES
             </h2>
-          </ClickableImages>
+          </ClickableImages >
         
         </Container>
       </Layout>
