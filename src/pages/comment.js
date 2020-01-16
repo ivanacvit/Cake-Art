@@ -24,9 +24,8 @@ const Comment = () => {
         </Layout>
       ) : (
         <Layout>
-        <Container>
-          <div
-          sx={{ paddingTop: [5], textAlign: "center"}}>
+        <Container  sx={{ paddingTop: [5], textAlign: "center"}}>
+        
             <p
               sx={{
                 color: "grey",
@@ -59,7 +58,7 @@ const Comment = () => {
               </button>
              
             </Link>
-          </div>
+       
         </Container>
         </Layout>
       )}
