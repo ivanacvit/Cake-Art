@@ -22,7 +22,8 @@ const Comment = () => {
         </Container>
       ) : (
         <Container>
-          <div className={styles.logoutDiv}>
+          <div className={styles.logoutDiv}
+          sx={{ paddingTop: "4rem"}}>
             <p
               sx={{
                 color: "grey",
