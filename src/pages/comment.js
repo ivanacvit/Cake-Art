@@ -54,10 +54,10 @@ export default () => (
       <Container>
         <h2>COMMENT</h2>
         {isLoggedIn() ? (
-          <Comments />
+          <Comment />
         ) : (
           <>
-            <Comment />
+            <Comments />
           </>
         )}
       </Container>
