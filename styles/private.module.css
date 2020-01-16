@@ -13,3 +13,13 @@
   .Logout:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.24)
   }
+
+  .logoutDiv{
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  .loginDiv{
+    padding-top: 0rem;
+    text-align: left;
+  }

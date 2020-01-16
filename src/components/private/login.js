@@ -45,7 +45,6 @@ class Login extends Component {
             </p>
 
             <input
-              autoFocus
               type="text"
               className={styles.LoginForm__input}
               placeholder="Username"

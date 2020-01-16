@@ -15,23 +15,13 @@ const Comment = () => {
       {isLoggedIn() ? (
         <Container>
           <h2>COMMENTS</h2>
-          <div
-            sx={{
-              paddingTop: [0],
-              textAlign: "left"
-            }}
-          >
+          <div className={styles.loginDiv}>
           <Comments />
           </div>
         </Container>
       ) : (
         <Container>
-          <div
-            sx={{
-              paddingTop: [5],
-              textAlign: "center",
-            }}
-          >
+          <div className={styles.logoutDiv}>
             <p
               sx={{
                 color: "grey",
