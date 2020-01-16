@@ -15,7 +15,14 @@ const Comment = () => {
       {isLoggedIn() ? (
         <Container>
           <h2>COMMENTS</h2>
+          <div
+            sx={{
+              paddingTop: [0],
+              textAlign: "unset"
+            }}
+          >
           <Comments />
+          </div>
         </Container>
       ) : (
         <Container>
