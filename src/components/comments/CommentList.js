@@ -14,6 +14,7 @@ class Comments extends React.Component {
     };
     this.pusher = new Pusher('f848aff7e12a3bd424b1', {
       cluster: 'eu',
+      forceTLS: true
     });
   }
   componentDidMount() {
@@ -30,7 +31,7 @@ class Comments extends React.Component {
     return (
       <div>
         <CommentForm />
-   
+        <form onSubmit={this.handleSubmit} className="comment-form">
         <div sx={{
               paddingTop: "20px"
             }}>
@@ -44,6 +45,7 @@ class Comments extends React.Component {
             </p>
           )}
         </div>
+        </form>
       </div>
     );
   }

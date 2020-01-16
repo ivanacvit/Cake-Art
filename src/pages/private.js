@@ -53,7 +53,19 @@ const Logout = () => (
         }}
         className={styles.Logout}
       >
-        Logout
+         <button
+                sx={{
+                  backgroundColor: "white",
+                  color: "#F78DA7",
+                  border: "white",
+                  cursor: "pointer",
+                  fontSize: "inherit",
+                  outline: "0",
+                }}
+              >
+                Logout
+              </button>
+        
       </Link>
     </div>
   </>

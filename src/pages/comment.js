@@ -15,14 +15,14 @@ const Comment = () => {
       {isLoggedIn() ? (
         <Container>
           <h2>COMMENTS</h2>
-          <div className={styles.loginDiv}
+          <div
           sx={{ paddingTop: [0]}}>
           <Comments />
           </div>
         </Container>
       ) : (
         <Container>
-          <div className={styles.logoutDiv}
+          <div
           sx={{ paddingTop: [5]}}>
             <p
               sx={{
@@ -42,7 +42,19 @@ const Comment = () => {
               }}
               className={styles.Logout}
             >
-              Login
+               <button
+                sx={{
+                  backgroundColor: "white",
+                  color: "#F78DA7",
+                  border: "white",
+                  cursor: "pointer",
+                  fontSize: "inherit",
+                  outline: "0",
+                }}
+              >
+                 Login
+              </button>
+             
             </Link>
           </div>
         </Container>

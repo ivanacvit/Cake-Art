@@ -1,13 +1,21 @@
 import React from 'react';
 import "../../../styles/comment.css"
+import { getUser, isLoggedIn, logout } from "../../../services/authentication"
 
 class CommentForm extends React.Component {
+  
   constructor() {
     super();
+    const content = { message: "", login: true }
+    if (isLoggedIn()) {
+      content.message = `${getUser().name}`
+    } 
     this.state = {
-      name: '',
+      name: content.message,
       comment: '',
     };
+    
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -29,11 +37,16 @@ class CommentForm extends React.Component {
     this.setState({ [name]: value });
   }
   render() {
+    const content = { message: "", login: true }
+    if (isLoggedIn()) {
+      content.message = `${getUser().name}`
+    } 
+
     const { name, comment } = this.state;
     return (
       <form onSubmit={this.handleSubmit} className="comment-form">
         <input
-          placeholder="Your Name"
+          placeholder="Your name"
           value={name}
           name="name"
           autoComplete="off"
@@ -47,9 +60,9 @@ class CommentForm extends React.Component {
           value={comment}
           onChange={this.handleChange}
         />
-        <div>
+        
           <button className="button submit-button">Send</button>
-        </div>
+        
       </form>
     );
   }

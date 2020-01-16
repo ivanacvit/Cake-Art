@@ -7,6 +7,7 @@ import { css, jsx, Main } from "theme-ui"
 import Navigation from "../components/navigation"
 import Container from "../components/container"
 import Footer from "../components/footer"
+import { getUser, isLoggedIn, logout } from "../../services/authentication"
 
 const SiteContainer = props => (
   <div
@@ -33,6 +34,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const content = { message: "", login: true }
+  if (isLoggedIn()) {
+    content.message = `Hello, ${getUser().name}`
+  } 
 
   return (
     <>
@@ -60,6 +65,9 @@ const Layout = ({ children }) => {
         <Navigation menuItems={data.site.siteMetadata.menuItems} 
           
         />
+         <Container>
+          <span sx ={{color: "grey", letterSpacing:"tight"}}>{content.message}</span>
+        </Container>
 
         <Main>
           {children}

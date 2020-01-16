@@ -4,32 +4,30 @@ module.exports = {
     description: `Korisnicka sucelja`,
     menuItems: [
       {
-        text: 'HOME',
-        path: '/'
+        text: "HOME",
+        path: "/",
       },
       {
-        text: 'CAKE GALLERY',
-        path: '/cakegallery',
+        text: "CAKE GALLERY",
+        path: "/cakegallery",
         partiallyActive: true,
       },
       {
-        text: 'BLOG&RECIPES',
-        path: '/blog',
+        text: "BLOG&RECIPES",
+        path: "/blog",
         partiallyActive: true,
       },
       {
-        text: 'COMMENT US',
-        path: '/comment',
+        text: "COMMENT US",
+        path: "/comment",
+        private: true,
+      },
+      {
+        text: "LOGIN",
+        path: "/private",
         partiallyActive: true,
       },
-     {
-       text: 'LOGIN',
-       path: '/private',
-       partiallyActive: true,
-     }, 
-    
-     
-     ]
+    ],
   },
   plugins: [
     {
@@ -39,12 +37,12 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `content`,
-          path: `${__dirname}/content`,
-        },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -70,7 +68,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
-  
+
     {
       resolve: "gatsby-theme-style-guide",
       options: {

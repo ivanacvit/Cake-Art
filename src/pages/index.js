@@ -42,6 +42,7 @@ const Index = ({ data }) => {
         
         </Container>
       </Layout>
+    
     </>
   )
 }
