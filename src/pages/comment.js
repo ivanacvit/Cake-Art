@@ -11,8 +11,9 @@ import styles from "../../styles/private.module.css"
 
 const Comment = () => {
   return (
-    <Layout>
+   <>
       {isLoggedIn() ? (
+        <Layout>
         <Container>
           <h2>COMMENTS</h2>
           <div
@@ -20,10 +21,12 @@ const Comment = () => {
           <Comments />
           </div>
         </Container>
+        </Layout>
       ) : (
+        <Layout>
         <Container>
           <div
-          sx={{ paddingTop: [5]}}>
+          sx={{ paddingTop: [5], textAlign: "center"}}>
             <p
               sx={{
                 color: "grey",
@@ -58,8 +61,9 @@ const Comment = () => {
             </Link>
           </div>
         </Container>
+        </Layout>
       )}
-    </Layout>
+    </>
   )
 }
 
