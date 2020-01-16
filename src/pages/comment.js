@@ -9,8 +9,8 @@ import { Link, navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../../services/authentication"
 import styles from "../../styles/private.module.css"
 
-const Comment = () => {
-  return (
+const Comment = () => (
+  
     <>
       <div sx={{ paddingTop: [4], textAlign: "center" }}>
         <p
@@ -47,7 +47,6 @@ const Comment = () => {
       
     </>
   )
-}
 
 export default () => (
   <>
