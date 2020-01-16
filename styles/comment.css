@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  padding-top: 0rem;
+  text-align: left;
 }
 input,
 textarea {
