@@ -15,7 +15,8 @@ const Comment = () => {
       {isLoggedIn() ? (
         <Container>
           <h2>COMMENTS</h2>
-          <div className={styles.loginDiv}>
+          <div className={styles.loginDiv}
+          sx={{ paddingTop: "0rem"}}>
           <Comments />
           </div>
         </Container>
