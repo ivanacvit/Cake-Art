@@ -16,14 +16,14 @@ const Comment = () => {
         <Container>
           <h2>COMMENTS</h2>
           <div className={styles.loginDiv}
-          sx={{ paddingTop: "0rem"}}>
+          sx={{ paddingTop: [0]}}>
           <Comments />
           </div>
         </Container>
       ) : (
         <Container>
           <div className={styles.logoutDiv}
-          sx={{ paddingTop: "4rem"}}>
+          sx={{ paddingTop: [5]}}>
             <p
               sx={{
                 color: "grey",
