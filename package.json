@@ -11,9 +11,12 @@
     "@mdx-js/react": "^1.5.3",
     "@theme-ui/components": "^0.2.50",
     "@theme-ui/presets": "^0.2.44",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "debounce": "^1.2.0",
     "disqus-react": "^1.0.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "gatsby": "^2.16.1",
     "gatsby-background-image": "^0.9.7",
     "gatsby-image": "^2.2.34",
@@ -35,6 +38,8 @@
     "mdbreact": "^4.24.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
+    "pusher": "^3.0.0",
+    "pusher-js": "^5.0.3",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-border": "^1.0.0",
@@ -43,7 +48,8 @@
     "react-slick": "^0.25.2",
     "react-style-tag": "^2.0.1",
     "slick-carousel": "^1.8.1",
-    "theme-ui": "^0.2.49"
+    "theme-ui": "^0.2.49",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "gatsby-plugin-just-comments": "^0.2.3",

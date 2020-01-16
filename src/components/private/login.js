@@ -33,7 +33,7 @@ class Login extends Component {
 
   render() {
     const style = this.state.invalid
-      ? { color: "var(--color-red, red)" }
+      ? { color: "#9013FE" }
       : { color: "var(green)" }
 
     return (

@@ -96,8 +96,3 @@ const BlogTest = props => {
 }
 
 export default BlogTest
-
-/* "@media (min-width: 400px)": {
-    color: `blue`,
-  },
-}} */

@@ -1,7 +1,3 @@
-.Text{
-  color: grey;
-  letter-spacing: tight;
-}
 .LoginForm {
     display: flex;
     flex-direction: column;
@@ -15,13 +11,10 @@
     outline: none;
     background-color:white;
     border:1px solid grey;
-    cursor: pointer;
-    font-size: inherit;
-
-    
+    font-size: inherit; 
   }
   
-  .LoginForm__input:focus {
+  .LoginForm__input,.TextArea:focus {
     border-color: var(--color-gatsby);
   }
   
@@ -31,7 +24,7 @@
     font-size: inherit;
     margin-top: 0.5rem;
   }
-  
+
   .LoginForm__button {
     outline:0;
     background-color:white;
@@ -47,3 +40,9 @@
 .LoginForm__button:hover{
     box-shadow: 0 0 5px rgba(0,0,0,0.24)
   }
+
+  .Text{
+    color: grey;
+    letter-spacing: tight;
+  }
+
