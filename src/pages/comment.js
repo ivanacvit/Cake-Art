@@ -18,7 +18,7 @@ const Comment = () => {
           <div
             sx={{
               paddingTop: [0],
-              textAlign: "unset"
+              textAlign: "left"
             }}
           >
           <Comments />

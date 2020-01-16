@@ -18,34 +18,40 @@ export default () => (
             type="text"
             className={styles.LoginForm__input}
             placeholder="Name"
+            autoComplete="off"
           />
 
           <input
             type="text"
             className={styles.LoginForm__input}
             placeholder="Surname"
+            autoComplete="off"
           />
 
           <input
             type="text"
             className={styles.LoginForm__input}
             placeholder="Username"
+            autoComplete="off"
           />
 
           <input
             type="text"
             className={styles.LoginForm__input}
             placeholder="Email address"
+            autoComplete="off"
           />
           <input
             type="password"
             className={styles.LoginForm__input}
             placeholder="Password"
+            autoComplete="off"
           />
           <input
             type="password"
             className={styles.LoginForm__input}
             placeholder="Enter your password again"
+            autoComplete="off"
           />
          
             <input

@@ -51,6 +51,7 @@ class Login extends Component {
               placeholder="Username"
               onChange={this.handleUsername}
               value={this.state.username}
+              autoComplete="off"
             />
 
             <input
@@ -59,6 +60,7 @@ class Login extends Component {
               placeholder="Password"
               onChange={this.handlePassword}
               value={this.state.password}
+              autoComplete="off"
             />
 
             <input
