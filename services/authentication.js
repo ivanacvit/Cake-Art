@@ -34,6 +34,23 @@ export const handleLogin = ({ username, password }) => {
   };
 };
 
+export const handleRegister = ({ name, surname, username, email, password }) => {
+  
+  if (username === `null` && password === `null`) {
+   
+
+    return {
+      error: true
+    };
+  }
+
+  return {
+    error: true,
+    message: 'Invalid, try "ivana" & "lozinka"'
+  };
+};
+
+
 export const isLoggedIn = () => {
   const user = getUser();
   return !!user.username;

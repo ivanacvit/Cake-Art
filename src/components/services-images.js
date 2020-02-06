@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 import "../../styles/image-hover.css"
 import Container from "../components/container"
 
-const ClickableImage = ({ children, ...prop }) => {
+const ServicesImages = ({ children, ...prop }) => {
   const data = useStaticQuery(graphql`
     {
       birthdayImage: file(
@@ -34,35 +34,42 @@ const ClickableImage = ({ children, ...prop }) => {
         }
       }
 
-      specialImage: file(
-        relativePath: {
-          eq: "images/special-occasion/unicorn-specialOccasion-cake-29.jpg"
-        }
-      ) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+        
+      
     }
   `)
 
-  const { birthdayImage, specialImage, weddingImage } = data
+  const { birthdayImage, weddingImage } = data
 
   return (
     <>
       <div
         sx={{
           width: "100%",
-          maxWidth: "container",
+          maxWidth: "700px",
           margin: "0 auto",
           px: [0],
+          paddingBottom:"50px"
+        
         }}
       >
         <div {...prop}>{children}</div>
 
-        <Grid gap={[3, 4, 5]} columns={[2, 3, 3]}>
+        <Grid gap={[2, 4, 5]} columns={[2]}>
+        <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={weddingImage.sharp.fluid}
+              ></Img>
+              <div className="overlay">
+                <Link to="services-wedding" className="info">
+                  Weddings
+                </Link>
+              </div>
+            </div>
+          </Card>
+
           <Card>
             <div className="hovereffect">
               <Img
@@ -70,45 +77,20 @@ const ClickableImage = ({ children, ...prop }) => {
                 fluid={birthdayImage.sharp.fluid}
               ></Img>
               <div className="overlay">
-                <Link to="birthday-cake" className="info">
-                  Birthday Cakes
+                <Link to="services-custom" className="info">
+                  Custom
                 </Link>
               </div>
             </div>
           </Card>
 
-          <Card>
-            <div className="hovereffect">
-              <Img
-                className="img-responsive"
-                fluid={weddingImage.sharp.fluid}
-              ></Img>
-              <div className="overlay">
-                <Link to="wedding-cake" className="info">
-                  Wedding Cakes
-                </Link>
-              </div>
-            </div>
-          </Card>
+        
 
-          <Card>
-            <div className="hovereffect">
-              <Img
-                className="img-responsive"
-                fluid={specialImage.sharp.fluid}
-              ></Img>
-              <div className="overlay">
-                <Link to="special-occasion" className="info">
-                  Special Occasion
-                </Link>
-              </div>
-            </div>
-          </Card>
         </Grid>
       </div>
     </>
   )
 }
 
-export default ClickableImage
+export default ServicesImages
 //gap pomiče navigaciju

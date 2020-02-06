@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "react"
 import { Grid, Card } from '@theme-ui/components'
-import React, { useRef, useState, useMemo } from "react"
 import matchSorter from "match-sorter"
 import debounce from "debounce"
 import Img from "gatsby-image"
@@ -96,9 +96,9 @@ const FilteredGallery = ({ images = [] }) => {
           return (
             image.cake && (
               <Card key={image.id}>
-                <div className="hovereffect">
+                <div>
                 <Img
-                className="img-responsive"
+                
                   key={image.id}
                   fluid={{ ...image.sharp.fluid, aspectRatio: 1 / 1 }}
                 />

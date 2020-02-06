@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Background from "../components/home-page/background"
 import HomeGallery from "../components/home-page/home-gallery"
 import Container from "../components/container"
-import ClickableImages from "../components/clickable-images"
+import ServicesImages from "../components/services-images"
 
 const Index = ({ data }) => {
   const { homeGallery } = data
@@ -21,7 +21,7 @@ const Index = ({ data }) => {
         <Container>
           <HomeGallery images={homeGallery.images} />
 
-          <ClickableImages
+          <ServicesImages
             sx={{
               textAlign: "center",
               margin: [2, 5],
@@ -38,7 +38,7 @@ const Index = ({ data }) => {
             >
               OUR SERVICES
             </h2>
-          </ClickableImages >
+          </ServicesImages >
         
         </Container>
       </Layout>

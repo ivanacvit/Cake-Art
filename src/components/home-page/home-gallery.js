@@ -48,9 +48,9 @@ const HomeGallery = ({ images = [] }) => {
         {processedImages.map((image) => {
           return (
               <Card key={image.id} >
-                 <div className="hovereffect">
+                 <div >
                 <Img
-                  className="img-responsive"
+                  
                   key={image.id}
                   fluid={{ ...image.sharp.fluid, aspectRatio: 1 / 1 }}
                 />

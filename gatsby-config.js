@@ -8,13 +8,18 @@ module.exports = {
         path: "/",
       },
       {
-        text: "CAKE GALLERY",
-        path: "/cakegallery",
+        text: "OUR SERVICES",
+        path: "/services",
         partiallyActive: true,
       },
       {
         text: "BLOG&RECIPES",
         path: "/blog",
+        partiallyActive: true,
+      },
+      {
+        text: "LOCATION",
+        path: "/location",
         partiallyActive: true,
       },
       {
@@ -30,6 +35,8 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

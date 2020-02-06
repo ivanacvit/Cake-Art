@@ -1,6 +1,6 @@
 ---
 title: "Unicorn Cake"
-image: "../../../content/images/birthday/unicornCake-birthday-cake-14.jpg"
+image: "../../../content/images/birthday/unicorn-birthday-cake-14.jpg"
 date: "December 1, 2019"
 keywords: "unicorn"
 ---

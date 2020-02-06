@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 import Blog from "../components/blog"
 import SearchIcon from "../components/search-icon"
 
-const BirthdayCake = ({ data }) => {
+const SpecialOccasion= ({ data }) => {
   const allPosts = data.allMarkdownRemark.edges
 
   const emptyQuery = ""
@@ -46,7 +46,7 @@ const BirthdayCake = ({ data }) => {
     <>
       <Layout>
         <Container>
-          <h2>Birthday Cakes</h2>
+          <h2>Special Occasion</h2>
 
           <div
             sx={{
@@ -113,7 +113,7 @@ const BirthdayCake = ({ data }) => {
   )
 }
 
-export default BirthdayCake
+export default SpecialOccasion
 
 export const query = graphql`
   query {

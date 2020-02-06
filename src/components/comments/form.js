@@ -1,10 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { Link, Route } from "gatsby"
+
 import "../../../styles/comment.css"
 import { getUser, isLoggedIn, logout } from "../../../services/authentication"
 
 class CommentForm extends React.Component {
-  
   constructor() {
+    
     super();
     const content = { message: "", login: true }
     if (isLoggedIn()) {
@@ -32,15 +35,15 @@ class CommentForm extends React.Component {
     const data = await response.json();
     this.setState({ comment: '', name: '' });
   }
+  
   handleChange({ target }) {
     const { name, value } = target;
     this.setState({ [name]: value });
+
   }
   render() {
     const content = { message: "", login: true }
-    if (isLoggedIn()) {
-      content.message = `${getUser().name}`
-    } 
+    
 
     const { name, comment } = this.state;
     return (

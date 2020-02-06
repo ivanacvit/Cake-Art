@@ -1,6 +1,6 @@
 ---
 title: "Chocolate Cake"
-image: "../../../content/images/special-occasion/chocolateCake-specialOccasion-cake-20.jpg"
+image: "../../../content/images/special-occasion/chocolate-specialOccasion-cake-20.jpg"
 date: "October 2, 2019"
 keywords: "chocolate"
 ---

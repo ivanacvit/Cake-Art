@@ -1,6 +1,6 @@
 ---
 title: "Lemon Cake"
-image: "../../../content/images/wedding/lemonCake-wedding-cake-00.jpg"
+image: "../../../content/images/wedding/lemon-wedding-cake-00.jpg"
 date: "November 16, 2019"
 keywords: "lemon"
 ---

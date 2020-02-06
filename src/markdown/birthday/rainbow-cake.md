@@ -1,6 +1,6 @@
 ---
 title: "Rainbow Cake"
-image: "../../../content/images/birthday/rainbowCake-birthday-cake-16.jpg"
+image: "../../../content/images/birthday/rainbow-birthday-cake-16.jpg"
 date: "November 21, 2018"
 keywords: "rainbow"
 ---

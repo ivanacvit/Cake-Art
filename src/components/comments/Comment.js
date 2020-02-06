@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
-
 import React from 'react';
+
 const Comment = ({ comment }) => (
   <div sx={{paddingBottom:"20px"}}>
     <div className="comment__meta">
