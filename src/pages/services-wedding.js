@@ -54,7 +54,7 @@ const ServicesWedding = ({ data }) => {
           We can provide a wide array of desserts for all your wedding
           celebrations including:{" "}
         </p>
-        <p
+        <div
           sx={{
             color: "grey",
             letterSpacing: "tight",
@@ -67,7 +67,7 @@ const ServicesWedding = ({ data }) => {
           </p>{" "}
           <p>Hotel room amenities for out of town guests</p>{" "}
           <p>Themed grooms’ cakes</p>
-        </p>
+        </div>
       </div>
 
       <div sx={{ paddingBottom: [3] }}>
@@ -184,8 +184,7 @@ const ServicesWedding = ({ data }) => {
                 color: "white",
               }}
             >
-              HAND-DECORATED TIER
-              <br /> CAKES
+              HAND-DECORATED TIER CAKES
             </h1>
             <p
               sx={{
@@ -246,7 +245,7 @@ export default ServicesWedding
 export const query = graphql`
   query {
     servicesWedding: file(
-      relativePath: { eq: "services-wedding/services-wedding.jpg" }
+      relativePath: { eq: "services-wedding/services-wedding4.jpg" }
     ) {
       sharp: childImageSharp {
         fluid(maxWidth: 1920, traceSVG: { color: "#c3dafe" }) {

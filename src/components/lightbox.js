@@ -67,9 +67,13 @@ export default class Lightbox extends Component {
           ))}
         </Grid>
         {showLightbox && (
-          <Dialog
+          <Dialog aria-labelledby="dialogId"
             sx={{
               width: "35%",
+              
+              "@media (max-width: 800px)": {
+                width: "45%",
+              },
             }}
           >
             <Img
@@ -94,6 +98,11 @@ export default class Lightbox extends Component {
                 display: "block",
                 marginTop: "20px",
                 marginBottom: "0px",
+                
+              "@media (max-width: 800px)": {
+                padding: "4px 12px",
+                fontSize: "small",
+              },
               }}
               onClick={() => this.setState({ showLightbox: false })}
             >
