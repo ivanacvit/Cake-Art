@@ -46,7 +46,7 @@ const CupCake = ({ data }) => {
   return (
     <>
       <Layout>
-        <Container>
+        <Container sx={{paddingBottom: "50px"}}>
           <h2>CupCakes</h2>
 
           <div

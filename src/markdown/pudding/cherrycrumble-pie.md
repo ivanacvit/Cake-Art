@@ -1,12 +1,12 @@
 ---
-title: "Cherry Crumble Pie"
+title: "Cherry Pie"
 image: "../../../content/recipes/pudding/cherrycrumblepie-pudding1.jpg"
 date: "September 15, 2017"
 keywords: "Cherry filling baked inside our flaky pie crust topped with our signature crumble."
 ---
 ## Puddings&Pies
 ---
-## Cherry Crumble Pie
+## Cherry Pie
 
 ![Image](../../../content/recipes/pudding/cherrycrumblepie-pudding1.jpg)
 

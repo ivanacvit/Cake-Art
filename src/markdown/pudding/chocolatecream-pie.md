@@ -1,12 +1,12 @@
 ---
-title: "Chocolate Cream Pie"
+title: "Chocolate Pie"
 image: "../../../content/recipes/pudding/chocolatecreampie-pudding1.jpg"
 date: "October 30, 2019"
 keywords: "Thick chocolate pudding inside our flaky pie crust topped with lightly sweetened whipped cream."
 ---
 ## Puddings&Pies
 ---
-## Chocolate Cream Pie
+## Chocolate Pie
 
 ![Image](../../../content/recipes/pudding/chocolatecreampie-pudding1.jpg)
 

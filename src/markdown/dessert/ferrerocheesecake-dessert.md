@@ -1,12 +1,12 @@
 ---
-title: "Ferrero Rocher Chessecake"
+title: "Ferrero Rocher"
 image: "../../../content/recipes/dessert/ferrerorochercheesecake-dessert1.jpg"
 date: "October 10, 2019"
 keywords: "This decadent cheesecake is the perfect dessert to impress your next dinner party crowd. No baking required."
 ---
 ## Desserts
 ---
-## Ferrero Rocher Chessecake
+## Ferrero Rocher
 
 ![Image](../../../content/recipes/dessert/ferrerorochercheesecake-dessert1.jpg)
 

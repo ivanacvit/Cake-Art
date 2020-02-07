@@ -32,8 +32,16 @@ export default class Lightbox extends Component {
   }
 
   render() {
+    const getCake = imageBase =>
+      imageBase
+        .split("-")
+        .slice(0, -1)
+        .map(item => item.charAt(0).toUpperCase() + item.slice(1))
+        .join(" ")
+
     const { images } = this.props
     const { selectedImage, showLightbox } = this.state
+
     return (
       <Fragment>
         <Grid
@@ -41,7 +49,7 @@ export default class Lightbox extends Component {
           columns={[2, 3, 4]}
           sx={{ pt: 3 }}
           sx={{ outline: "0" }}
-          sx={{paddingBottom: "50px"}}
+          sx={{ paddingBottom: "50px" }}
         >
           {images.map(image => (
             <PreviewButton
@@ -67,47 +75,58 @@ export default class Lightbox extends Component {
           ))}
         </Grid>
         {showLightbox && (
-          <Dialog aria-labelledby="dialogId"
+          <Dialog
+            aria-labelledby="dialogId"
             sx={{
               width: "35%",
-              
-              "@media (max-width: 800px)": {
-                width: "45%",
+              backgroundColor: "#E6E6E6",
+
+              "@media (max-width: 1050px)": {
+                width: "70%",
               },
             }}
           >
+            <button
+              sx={{
+                outline: "0",
+                textDecoration:"none",
+                background: "#F78DA7",
+                border: "1px solid #F78DA7",
+                color: "white",
+                borderRadius: "3px",
+                cursor: "pointer",
+                fontSize: "inherit",
+                marginLeft: "auto",
+                display: "block",
+                marginBottom: "20px",
+                "&:hover": {
+                  boxShadow: "0 0 5px rgba(0,0,0,0.24)",
+                },
+              }}
+              onClick={() => this.setState({ showLightbox: false })}
+            >
+              X
+            </button>
             <Img
               fluid={{
                 ...selectedImage.node.childImageSharp.fluid,
                 aspectRatio: 1 / 1,
               }}
             />
-            
-            <button
+            <p
               sx={{
-                outline: "0",
-                color: "#F78DA7",
-                border: "1px solid #F78DA7",
-                background: "transparent",
-                padding: "12px 28px",
-                borderRadius: "3px",
-                cursor: "pointer",
-                fontSize: "inherit",
-                marginLeft: "auto",
-                marginRight: "auto",
-                display: "block",
-                marginTop: "20px",
-                marginBottom: "0px",
-                
-              "@media (max-width: 800px)": {
-                padding: "4px 12px",
-                fontSize: "small",
-              },
+                color: "grey",
+                letterSpacing: "tight",
+                m: 0,
+                pt: [2, 4],
+                pb: [2],
+                fontSize: [1, 1, 2],
+                fontWeight: "medium",
+                textAlign: "center",
               }}
-              onClick={() => this.setState({ showLightbox: false })}
             >
-              Close
-            </button>
+              {getCake(selectedImage.node.base)}
+            </p>
           </Dialog>
         )}
       </Fragment>

@@ -1,12 +1,12 @@
 ---
-title: "Sweetheart Cookies"
+title: "Heart Cookies"
 image: "../../../content/recipes/cookie/sweetheart-cookie1.jpg"
 date: "June 19, 2018"
 keywords: "Two buttery sugar cookies sandwiched with our vanilla buttercream."
 ---
 ## Cookies
 ---
-## Sweetheart Cookies
+## Heart Cookies
 
 ![Image](../../../content/recipes/cookie/sweetheart-cookie1.jpg)
 

@@ -7,12 +7,11 @@ import Img from "gatsby-image"
 const Blog = props => {
   return (
     <>
-      <section
+      <div
         key={props.id}
         sx={{
           mb: [2],
           display: "flex",
-          paddingBottom:"50px"
         }}
       >
         <div
@@ -94,7 +93,7 @@ const Blog = props => {
             {props.keywords}
           </Styled.p>
         </div>
-      </section>
+      </div>
     </>
   )
 }

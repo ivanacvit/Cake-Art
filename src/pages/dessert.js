@@ -46,7 +46,7 @@ const Dessert = ({ data }) => {
   return (
     <>
       <Layout>
-        <Container>
+        <Container sx={{paddingBottom: "50px"}}>
           <h2>Desserts</h2>
 
           <div

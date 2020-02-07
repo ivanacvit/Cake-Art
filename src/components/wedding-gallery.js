@@ -1,3 +1,4 @@
+  
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
@@ -11,6 +12,7 @@ const WeddingGallery = () => (
         images: allFile(filter: { absolutePath: { regex: "//content/images/wedding//" } }) {
           edges {
             node {
+              base
               childImageSharp {
                 fluid(maxWidth: 400, traceSVG: { color: "#c3dafe" }) {
                     ...GatsbyImageSharpFluid
@@ -21,7 +23,7 @@ const WeddingGallery = () => (
         }
       }
     `}
-    render={data => <Lightbox images={data.images.edges} />}
+    render={data => <Lightbox images={data.images.edges} names={data.images.edges} />}
   />
 );
 export default WeddingGallery;

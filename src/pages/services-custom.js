@@ -10,7 +10,7 @@ import Slider from "../components/slider"
 
 const cakes = [
   "https://funcakes.com/content/uploads/2019/12/FunCakes-recept-ruby-pure-chocolade-cake-website-2-1000x750.jpg",
-  "https://media.istockphoto.com/photos/unicorn-cake-on-a-cakestand-picture-id868596228?k=6&m=868596228&s=612x612&w=0&h=ETCirhlVIVtoErH7XRqRXF4ss3ekvNaPtaOcaslDw48=",
+  "https://akispetretzikis.com/system/uploads/medium/data/13700/recipe_main_tourta-genethlion-site.jpg",
   "https://i.pinimg.com/originals/fd/63/ed/fd63edda0984f925c5717e4a80e1d00c.jpg",
   "https://tulsaspecialtysales.com/image/276931-full_highway-unicorn-cake.jpg",
 ]
@@ -18,7 +18,7 @@ const cakes = [
 const cupcakes = [
   "https://www.itl.cat/pngfile/big/42-421253_cup-cakes-wallpaper-hd-cupcake-wallpapers-for-desktop.jpg",
   "https://a-static.besthdwallpaper.com/torta-cup-sfondo-5120x2160-2403_16.jpg",
-  "https://lh3.googleusercontent.com/proxy/KLMtEmPisGw7xDHLovawAuUpTdYjxTdLOfb6BfYWx5iRQDEuX5niKzR0Z16LOkiQih-Om0ss6llgxm1Wp5fMSZrusThuuD2KiWXboQhoAAccLmzpRW6D4jZ5GNxKFxMzcv4ijWMJ1TDRHXjr",
+  "https://www.ecopetit.cat/wpic/mpic/15-155272_cupcake-wallpaper-hd.jpg",
   "https://www.itl.cat/pngfile/big/52-528877_cupcakes-wallpaper-cupcake.jpg",
 ]
 

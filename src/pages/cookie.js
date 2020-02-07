@@ -46,7 +46,7 @@ const Cookie = ({ data }) => {
   return (
     <>
       <Layout>
-        <Container>
+        <Container sx={{paddingBottom: "50px"}}>
           <h2>Cookies</h2>
 
           <div

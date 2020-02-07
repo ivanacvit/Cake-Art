@@ -1,12 +1,12 @@
 ---
-title: "Chessecake Pudding"
+title: "Chesse Pudding"
 image: "../../../content/recipes/pudding/cheesecake-pudding1.jpg"
 date: "August 25, 2017"
 keywords: "Baked on a graham cracker crust, topped with a light sour cream topping."
 ---
 ## Puddings&Pies
 ---
-## Cheesecake Pudding
+## Cheese Pudding
 
 ![Image](../../../content/recipes/pudding/cheesecake-pudding1.jpg)
 

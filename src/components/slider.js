@@ -5,8 +5,6 @@ import { Slide } from "react-slideshow-image"
 import "../../styles/slider.css"
 import Container from "../components/container"
 
-
-
 const properties = {
   duration: 2000,
   transitionDuration: 500,

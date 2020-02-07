@@ -1,12 +1,12 @@
 ---
-title: "Raspberry Macarons"
+title: "Macarons"
 image: "../../../content/recipes/cookie/raspberrymacarons-cookie1.jpg"
 date: "March 29, 2017"
 keywords: "These raspberry macarons are tangy, sweet and melt-in-your-mouth amazing!"
 ---
 ## Cookies
 ---
-## Raspberry Macarons
+## Macarons
 
 ![Image](../../../content/recipes/cookie/raspberrymacarons-cookie1.jpg)
 
