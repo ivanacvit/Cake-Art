@@ -148,7 +148,7 @@ const ServicesCustom = ({ data }) => {
         <h1
             sx={{
               m: 0,
-              pt: [5],
+              pt: [1],
               fontSize: [4, 5, 5],
               fontWeight: "semibold",
               color: "grey",
