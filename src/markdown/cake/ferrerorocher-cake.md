@@ -1,16 +1,16 @@
 ---
-title: "Colorful Cake"
-image: "../../../content/images/birthday/colorfull-birthday-cake-12.webp"
+title: "Ferrero Rocher"
+image: "../../../content/recipes/cake/ferrerorocher-cake1.jpg"
 date: "November 10, 2019"
-keywords: "colorful"
+keywords: "This Ferrero Rocher Cake has the indulgent chocolates you love!"
 
 ---
-##Birthday Cakes
+##Cakes
 ---
 
-##Colorful Cake
+##Ferrero Rocher
 
-![Image](../../../content/images/birthday/colorfullCake-birthday-cake-12.webp) 
+![Image](../../../content/recipes/cake/ferrerorocher-cake1.jpg) 
 
 ####THINGS YOU'LL NEED
 *Ingredients*

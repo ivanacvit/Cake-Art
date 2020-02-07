@@ -12,9 +12,9 @@ import Container from "../components/container"
 const ClickableImage = ({ children, ...prop }) => {
   const data = useStaticQuery(graphql`
     {
-      birthdayImage: file(
+      cakeImage: file(
         relativePath: {
-          eq: "images/birthday/unicorn-birthday-cake-18.jpeg"
+          eq: "recipes/cake/cherry-cake1.jpg"
         }
       ) {
         sharp: childImageSharp {
@@ -24,8 +24,8 @@ const ClickableImage = ({ children, ...prop }) => {
         }
       }
 
-      weddingImage: file(
-        relativePath: { eq: "images/wedding/flower-wedding-cake-03.jpeg" }
+      cupcakeImage: file(
+        relativePath: { eq: "recipes/cupcake/raspberry-cupcake1.jpg" }
       ) {
         sharp: childImageSharp {
           fluid(maxWidth: 400) {
@@ -34,9 +34,33 @@ const ClickableImage = ({ children, ...prop }) => {
         }
       }
 
-      specialImage: file(
+      dessertImage: file(
         relativePath: {
-          eq: "images/special-occasion/unicorn-specialOccasion-cake-29.jpg"
+          eq: "recipes/dessert/oreo-dessert1.jpg"
+        }
+      ) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      cookieImage: file(
+        relativePath: {
+          eq: "recipes/cookie/raspberrymacarons-cookie1.jpg"
+        }
+      ) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      puddingImage: file(
+        relativePath: {
+          eq: "recipes/pudding/banana-pudding1.jpg"
         }
       ) {
         sharp: childImageSharp {
@@ -48,7 +72,7 @@ const ClickableImage = ({ children, ...prop }) => {
     }
   `)
 
-  const { birthdayImage, specialImage, weddingImage } = data
+  const { cakeImage, cupcakeImage, dessertImage, cookieImage, puddingImage } = data
 
   return (
     <>
@@ -58,20 +82,21 @@ const ClickableImage = ({ children, ...prop }) => {
           maxWidth: "container",
           margin: "0 auto",
           px: [0],
+          paddingBottom:"50px"
         }}
       >
         <div {...prop}>{children}</div>
 
-        <Grid gap={[3, 4, 5]} columns={[2, 3, 3]}>
+        <Grid gap={[3, 4, 4]} columns={[2, 3, 3]}>
           <Card>
             <div className="hovereffect">
               <Img
                 className="img-responsive"
-                fluid={birthdayImage.sharp.fluid}
+                fluid={{...cakeImage.sharp.fluid, aspectRatio: 1/1}}
               ></Img>
               <div className="overlay">
-                <Link to="birthday-cake" className="info">
-                  Birthday Cakes
+                <Link to="cake" className="info">
+                  Cakes
                 </Link>
               </div>
             </div>
@@ -81,11 +106,11 @@ const ClickableImage = ({ children, ...prop }) => {
             <div className="hovereffect">
               <Img
                 className="img-responsive"
-                fluid={weddingImage.sharp.fluid}
+                fluid={{...cupcakeImage.sharp.fluid, aspectRatio: 1/1}}
               ></Img>
               <div className="overlay">
-                <Link to="wedding-cake" className="info">
-                  Wedding Cakes
+                <Link to="cupcake" className="info">
+                  CupCakes
                 </Link>
               </div>
             </div>
@@ -95,11 +120,39 @@ const ClickableImage = ({ children, ...prop }) => {
             <div className="hovereffect">
               <Img
                 className="img-responsive"
-                fluid={specialImage.sharp.fluid}
+                fluid={{...dessertImage.sharp.fluid, aspectRatio: 1/1}}
               ></Img>
               <div className="overlay">
-                <Link to="special-occasion" className="info">
-                  Special Occasion
+                <Link to="dessert" className="info">
+                  Desserts
+                </Link>
+              </div>
+            </div>
+          </Card>
+
+          <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={{...cookieImage.sharp.fluid, aspectRatio: 1/1}}
+              ></Img>
+              <div className="overlay">
+                <Link to="cookie" className="info">
+                  Cookies
+                </Link>
+              </div>
+            </div>
+          </Card>
+
+          <Card>
+            <div className="hovereffect">
+              <Img
+                className="img-responsive"
+                fluid={{...puddingImage.sharp.fluid, aspectRatio: 1/1}}
+              ></Img>
+              <div className="overlay">
+                <Link to="pudding" className="info">
+                  Puddings&Pies
                 </Link>
               </div>
             </div>

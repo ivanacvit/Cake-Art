@@ -1,15 +1,15 @@
 ---
-title: "Unicorn Cake"
-image: "../../../content/images/birthday/unicorn-birthday-cake-14.jpg"
-date: "December 1, 2019"
-keywords: "unicorn"
+title: "Strawberry Cake"
+image: "../../../content/recipes/cake/strawberry-cake1.jpg"
+date: "December 16, 2018"
+keywords: "If you are a fan of rich and decadent Nutella, then you probably want to make this super simple, 3-ingredient cake."
 ---
-##Birthday Cakes
+## Cakes
 ---
 
-##Unicorn Cake
+## Strawberry Cake
 
-![Image](../../../content/images/birthday/unicornCake-birthday-cake-14.jpg) 
+![Image](../../../content/recipes/cake/strawberry-cake1.jpg) 
 
 ####THINGS YOU'LL NEED
 *Ingredients*
@@ -54,11 +54,4 @@ Once cakes are fully cooled, level them with a cake leveler.
 5. dd dollops of details using the pink and dark purple frostings each fitted with a #4B tip and the blue and dark purple frosting each fitted with a #2A tip.
 6. Pipe eyes onto the front center of the cake. Place horn on the top center of the cake and the ears on either side of the horn.
 7. Ta-da! This colorful Unicorn Cake will bring magic to any occasion!
-
-
-
-
-
-
-
 

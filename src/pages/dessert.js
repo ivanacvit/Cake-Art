@@ -2,13 +2,14 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { graphql } from "gatsby"
+import { Grid, Card } from '@theme-ui/components'
 
 import Container from "../components/container"
 import Layout from "../components/layout"
 import Blog from "../components/blog"
 import SearchIcon from "../components/search-icon"
 
-const WeddingCake = ({ data }) => {
+const Dessert = ({ data }) => {
   const allPosts = data.allMarkdownRemark.edges
 
   const emptyQuery = ""
@@ -25,10 +26,10 @@ const WeddingCake = ({ data }) => {
     const posts = data.allMarkdownRemark.edges || []
 
     const filteredData = posts.filter(post => {
-      const { keywords, title } = post.node.frontmatter
+      const { title } = post.node.frontmatter
 
       return (
-        keywords.toLowerCase().includes(query.toLowerCase()) ||
+       
         title.toLowerCase().includes(query.toLowerCase())
       )
     })
@@ -46,7 +47,7 @@ const WeddingCake = ({ data }) => {
     <>
       <Layout>
         <Container>
-          <h2>Wedding Cakes</h2>
+          <h2>Desserts</h2>
 
           <div
             sx={{
@@ -65,7 +66,7 @@ const WeddingCake = ({ data }) => {
             >
               <input
                 type="text"
-                placeholder="Search cake"
+                placeholder="Search dessert"
                 onChange={handleInputChange}
                 sx={{
                   py: 2,
@@ -96,16 +97,22 @@ const WeddingCake = ({ data }) => {
             </label>
           </div>
           <div>
+          <Grid gap={[4]} columns={[2]} sx = {{pt:3}}>
             {posts.map(({ node }) => (
+              <Card>
               <Blog
                 id={node.id}
                 to={node.fields.slug}
                 image={node.frontmatter.image.childImageSharp.fluid}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
+                keywords={node.frontmatter.keywords}
                 excerpt={node.excerpt}
               />
+              </Card>
             ))}
+            
+            </Grid>
           </div>
         </Container>
       </Layout>
@@ -113,12 +120,12 @@ const WeddingCake = ({ data }) => {
   )
 }
 
-export default WeddingCake
+export default Dessert
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//markdown/wedding//" } }
+      filter: { fileAbsolutePath: { regex: "//markdown/dessert//" } }
     ) {
       totalCount
       edges {

@@ -1,15 +1,15 @@
 ---
-title: "Rainbow Cake"
-image: "../../../content/images/birthday/rainbow-birthday-cake-16.jpg"
+title: "Milka Cake"
+image: "../../../content/recipes/cake/milka-cake1.jpg"
 date: "November 21, 2018"
-keywords: "rainbow"
+keywords: "Sweet cream made of milk chocolate with grillage that is the essentials of this cake with an original look."
 ---
-##Birthday Cakes
+## Cakes
 ---
 
-##Rainbow Cake
+## Milka Cake
 
-![Image](../../../content/images/birthday/rainbowCake-birthday-cake-16.jpg) 
+![Image](../../../content/recipes/cake/milka-cake1.jpg) 
 
 ####THINGS YOU'LL NEED
 *Ingredients*

@@ -4,41 +4,39 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const BlogTest = props => {
+const Blog = props => {
   return (
     <>
       <section
         key={props.id}
         sx={{
-          mb: [4, 5],
+          mb: [2],
           display: "flex",
+          paddingBottom:"50px"
         }}
       >
         <div
           sx={{
             pt:[3],
-            width: "400px",
+            width: "150px",
             "@media (max-width: 600px)": {
               width: "0px",
-              float: "right",
+          
             },
-            "@media (min-width: 700px) and (max-width: 1000px)": {
-                width: "600px",
-                paddingTop:"20px"
-              
-              },
+            
               
           }}
         >
           <Link to={props.to}>
             <Img
-              fluid={props.image}
-              sx={{
-              
-                "@media (max-width: 600px)": {
-                  display: "none",
-                },
-              }}
+              fluid={{...props.image, aspectRatio: 1/1}}
+             sx={{
+               width: "150px",
+               "@media (max-width: 600px)": {
+                display: "none",
+            
+              },
+             }}
             />
           </Link>
         </div>
@@ -67,6 +65,10 @@ const BlogTest = props => {
                   color: "#F78DA7",
                   cursor: "pointer",
                 },
+                "@media (max-width: 600px)": {
+                  color: "#F78DA7",
+              
+                },
               }}
               activeStyle={{
                 color: "#F78DA7",
@@ -77,8 +79,10 @@ const BlogTest = props => {
             </Link>
           </Styled.h4>
 
-          <span sx={{ fontWeight: "body", fontSize: 1, color: "gray.5" }}>
+          <span sx={{ fontWeight: "body", 
+          fontSize: 1, color: "gray.5",}}>
             {props.date}
+            
           </span>
 
           <Styled.p
@@ -87,7 +91,7 @@ const BlogTest = props => {
               color: "black",
             }}
           >
-            {props.excerpt}
+            {props.keywords}
           </Styled.p>
         </div>
       </section>
@@ -95,4 +99,4 @@ const BlogTest = props => {
   )
 }
 
-export default BlogTest
+export default Blog

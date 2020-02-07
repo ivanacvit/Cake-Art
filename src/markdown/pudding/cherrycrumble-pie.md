@@ -1,16 +1,16 @@
 ---
-title: "Banana Split Cupcake"
-image: "../../../content/images/birthday/bananaSplitCupcakes-birthday-cake-10.jpg"
-date: "August 11, 2019"
-keywords: "banana split"
+title: "Cherry Crumble Pie"
+image: "../../../content/recipes/pudding/cherrycrumblepie-pudding1.jpg"
+date: "September 15, 2017"
+keywords: "Cherry filling baked inside our flaky pie crust topped with our signature crumble."
 ---
-##Birthday Cakes
+## Puddings&Pies
 ---
-##Banana Split Cupcake
+## Cherry Crumble Pie
 
-![Image](../../../content/images/birthday/bananaSplitCupcakes-birthday-cake-10.jpg)
+![Image](../../../content/recipes/pudding/cherrycrumblepie-pudding1.jpg)
 
-####THINGS YOU'LL NEED
+#### THINGS YOU'LL NEED
 _Ingredients_
 
 - 1/3 cup all-purpose flour
@@ -32,14 +32,14 @@ _Decoration_
 - Whipped cream
 - 12 Maraschino cherries
 
-####LET'S GET STARTED!
+#### LET'S GET STARTED!
 
 1. Preheat oven to 350 degrees F. Line a muffin tin with 12 cupcakes liners.
 2. In a large mixing bowl, combine flour, cornstarch, baking powder, baking soda, and salt. Set aside.
 3. Use can electric mixer to beat butter and sugar together until light and fluffy. Mix in the the banana, buttermilk, and eggs until combined. Add in the dry ingredients a little at a time while mixing, until combined. Divide batter among the liners (an ice cream scoop works perfect for this!) and bake for 15-18 minutes or until toothpick comes out clean.
 4. Remove cupcakes from tin and allow to cool on a rack.
 
-####TIME TO DECORATE!
+#### TIME TO DECORATE!
 
 1. Place chocolate chips in a bowl and set aside. Place whipping cream in another dish and microwave until hot (about 45 seconds).
 2. Pour hot whipping cream over the chocolate chips and let it sit for 2 minutes and then stir together until completely melted and combined.

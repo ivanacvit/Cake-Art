@@ -13,13 +13,13 @@ module.exports = {
         partiallyActive: true,
       },
       {
-        text: "BLOG&RECIPES",
-        path: "/blog",
+        text: "LOCATION",
+        path: "/location",
         partiallyActive: true,
       },
       {
-        text: "LOCATION",
-        path: "/location",
+        text: "BLOG&RECIPES",
+        path: "/blog",
         partiallyActive: true,
       },
       {
