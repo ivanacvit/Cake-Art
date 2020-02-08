@@ -7,7 +7,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import "../../styles/image-hover.css"
-import Container from "../components/container"
 
 const ServicesImages = ({ children, ...prop }) => {
   const data = useStaticQuery(graphql`

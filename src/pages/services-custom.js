@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { Link } from "gatsby"
 
@@ -67,7 +66,7 @@ const ServicesCustom = ({ data }) => {
             <br />
             for custom cakes, cupcakes or cookies.
           </p>
-          <Link to="/index" sx={{ textDecoration: "none" }}>
+          <Link to="/location" sx={{ textDecoration: "none" }}>
             <button
               button
               sx={{
@@ -92,7 +91,7 @@ const ServicesCustom = ({ data }) => {
                 },
               }}
             >
-              Contact Your Local Bakery
+              Contact Us
             </button>
           </Link>
         </Container>

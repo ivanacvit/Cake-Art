@@ -25,6 +25,7 @@ const NavLink = ({ ...prop }) => (
     sx={{
       display: "inline-block",
       color: "grey",
+      fontWeight: "semibold",
       textDecoration: "none",
       textTransform: "uppercase",
       whiteSpace: "nowrap",

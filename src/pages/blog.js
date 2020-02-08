@@ -14,7 +14,7 @@ const Blog = () => {
         <div
           sx={{
             textAlign: "center",
-            margin: [2, 5],
+            margin: [4, 5],
           }}
         >
           <p

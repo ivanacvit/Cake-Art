@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Grid, Card } from "@theme-ui/components"
-import React, { Component, Fragment } from "react"
+import { Grid } from "@theme-ui/components"
+import { Component, Fragment } from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import { Dialog } from "@reach/dialog"
 import "@reach/dialog/styles.css"
+import { Link } from "gatsby"
 
 import "../../styles/image-hover.css"
 
@@ -78,18 +79,19 @@ export default class Lightbox extends Component {
           <Dialog
             aria-labelledby="dialogId"
             sx={{
-              width: "35%",
+              width: "45%",
               backgroundColor: "#E6E6E6",
 
               "@media (max-width: 1050px)": {
                 width: "70%",
+                
               },
             }}
           >
             <button
               sx={{
                 outline: "0",
-                textDecoration:"none",
+                textDecoration: "none",
                 background: "#F78DA7",
                 border: "1px solid #F78DA7",
                 color: "white",
@@ -107,26 +109,73 @@ export default class Lightbox extends Component {
             >
               X
             </button>
-            <Img
-              fluid={{
-                ...selectedImage.node.childImageSharp.fluid,
-                aspectRatio: 1 / 1,
-              }}
-            />
-            <p
+            <Grid gap={[1,1,4]} columns={[1,1,2]}>
+              <Img
+                fluid={{
+                  ...selectedImage.node.childImageSharp.fluid,
+                  aspectRatio: 1 / 1,
+                }}
+                sx={{
+                  "@media (max-width: 700px)": {
+                    display: "none",
+                    
+                  }
+                }}
+              />
+              <div>
+                <p
+                  sx={{
+                    color: "grey",
+                    letterSpacing: "tight",
+                    m: 0,
+                    pb: [3],
+                    fontSize: [1, 1, 2],
+                    fontWeight: "medium",
+                  }}
+                >
+                  {getCake(selectedImage.node.base)}
+                </p>
+                <p
+                  sx={{
+                    color: "black",
+                    letterSpacing: "tight",
+                    m: 0,
+                    pb: [4],
+                  }}
+                >
+                  What's better than a smooth white wedding cake? One covered in sparkly sanding sugar!
+                </p>
+
+                <Link to="/location" sx={{ textDecoration: "none" }}>
+            <button
+              button
               sx={{
-                color: "grey",
-                letterSpacing: "tight",
-                m: 0,
-                pt: [2, 4],
-                pb: [2],
-                fontSize: [1, 1, 2],
-                fontWeight: "medium",
-                textAlign: "center",
+                outline: "0",
+                color: "#F78DA7",
+                border: "1px solid #F78DA7",
+                background: "white",
+                padding: "12px 38px",
+                borderRadius: "3px",
+                cursor: "pointer",
+                fontSize: "inherit",
+                display: "block",
+                marginTop: "20px",
+                marginBottom: "0px",
+                "&:hover": {
+                  boxShadow: "0 0 5px rgba(0,0,0,0.24)",
+                },
+
+                "@media (max-width: 700px)": {
+                  padding: "8px 20px",
+                  marginTop: "5px",
+                },
               }}
             >
-              {getCake(selectedImage.node.base)}
-            </p>
+              Contact Us
+            </button>
+          </Link>
+              </div>
+            </Grid>
           </Dialog>
         )}
       </Fragment>

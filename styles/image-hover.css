@@ -72,14 +72,14 @@ padding:6px 14px;
 
 @media only screen and (max-width: 800px) and (min-width: 600px)  {
     .hovereffect a.info {
-        margin:80px 0 ;
+        margin:120px 0 ;
     }
 }
 
 
 @media only screen and (max-width: 900px) and (min-width: 800px)  {
     .hovereffect a.info {
-        margin:60px 0 ;
+        margin:90px 0 ;
     }
 }
 

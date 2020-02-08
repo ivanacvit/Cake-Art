@@ -12,7 +12,7 @@ const Blog = () => {
       <Container>
         <h2>OUR SERVICES</h2>
 
-        <ServicesImages sx={{ margin: [2,,5,5] }}> </ServicesImages>
+        <ServicesImages sx={{ margin: [4,5] }}> </ServicesImages>
       </Container>
     </Layout>
   )
