@@ -10,9 +10,24 @@ const Blog = () => {
   return (
     <Layout>
       <Container>
-        <h2>OUR SERVICES</h2>
-
-        <ServicesImages sx={{ margin: [4,5] }}> </ServicesImages>
+        <div
+          sx={{
+            textAlign: "center",
+            margin: [4, 5],
+          }}
+        >
+          <p
+            sx={{
+              color: "grey",
+              letterSpacing: "tight",
+            }}
+          >
+            Whether it’s your big day, a birthday at the office, or just another
+            Tuesday, we’ve got the perfect cakes and treats for your
+            celebrations.
+          </p>
+        </div>
+        <ServicesImages sx={{ margin: [4, 5] }}> </ServicesImages>
       </Container>
     </Layout>
   )

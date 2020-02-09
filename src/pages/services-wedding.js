@@ -32,7 +32,7 @@ const ServicesWedding = ({ data }) => {
               color: "white",
             }}
           >
-            SWEETS FOR<br></br>EVERY OCCASION
+            SWEETS FOR<br></br>WEDDING CELEBRATIONS
           </h1>
         </Container>
       </BackgroundImage>
@@ -228,7 +228,7 @@ const ServicesWedding = ({ data }) => {
           >
             bakery
           </a>{" "}
-          nearest you to speak with our Celebration Specialist to book a tasting
+          to speak with our Celebration Specialist to book a tasting
           and consultation.
         </p>
       </div>

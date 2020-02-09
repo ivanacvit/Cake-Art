@@ -14,9 +14,7 @@ const CakeGallery = ({ data }) => {
       <Layout>
         <Container>
         
-        <h2>
-          GALLERY
-        </h2>
+       
         <FilteredGallery images={imageFiles.images} />
 
      

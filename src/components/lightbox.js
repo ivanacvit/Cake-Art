@@ -88,21 +88,21 @@ export default class Lightbox extends Component {
               },
             }}
           >
-            <button
+              <button
               sx={{
                 outline: "0",
                 textDecoration: "none",
-                background: "#F78DA7",
-                border: "1px solid #F78DA7",
-                color: "white",
-                borderRadius: "3px",
+                backgroundColor: "#E6E6E6",
+                border: "none",
+                color: "grey",
+                padding: "10px 10px",
                 cursor: "pointer",
-                fontSize: "inherit",
+                fontSize: [2,3],
                 marginLeft: "auto",
                 display: "block",
                 marginBottom: "20px",
                 "&:hover": {
-                  boxShadow: "0 0 5px rgba(0,0,0,0.24)",
+                  color: "#F78DA7",
                 },
               }}
               onClick={() => this.setState({ showLightbox: false })}
@@ -148,7 +148,7 @@ export default class Lightbox extends Component {
 
                 <Link to="/location" sx={{ textDecoration: "none" }}>
             <button
-              button
+             
               sx={{
                 outline: "0",
                 color: "#F78DA7",

@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import { graphql, Link } from "gatsby"
 
@@ -8,8 +10,8 @@ import styles from "../../styles/login.module.css"
 export default () => (
   <>
     <Layout>
-      <Container>
-        <h2>REGISTER</h2>
+      <Container  sx={{py:[4,5]}}>
+       
         <form className={styles.LoginForm}>
           <p className={styles.Text}>Enter your data:</p>
 

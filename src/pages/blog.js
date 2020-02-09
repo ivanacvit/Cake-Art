@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <Layout>
       <Container>
-        <h2>BLOG&RECIPES</h2>
+       
         <div
           sx={{
             textAlign: "center",

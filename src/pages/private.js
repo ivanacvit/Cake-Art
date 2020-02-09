@@ -79,7 +79,7 @@ export default () => (
           <Logout />
         ) : (
           <>
-            <h2>LOGIN</h2>
+           
 
             <Login private="/comment" handleLogin={handleLogin} />
           </>

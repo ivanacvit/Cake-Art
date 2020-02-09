@@ -38,7 +38,7 @@ class Login extends Component {
 
     return (
       <>
-        <Container>
+        <Container sx={{pt:[4,5]}}>
           <form className={styles.LoginForm} onSubmit={this.handleSubmit}>
             <p className={styles.Text} style={style}>
               {this.state.message}
@@ -65,31 +65,18 @@ class Login extends Component {
             <input
               type="submit"
               value={"Log in"}
-              sx={{
-                backgroundColor: "#FFA5BB",
-                outline: "0",
-                color: "white",
-                border: "1px solid",
-                borderRadius: "3px",
-                cursor: "pointer",
-                textAlign: "center",
-                fontSize: "inherit",
-                padding: "12px",
-                marginTop: "0.5rem",
-                  "&:hover": {
-                    boxShadow: "0 0 5px rgba(0,0,0,0.24)",
-                  }
-              }}
+              className={styles.LoginForm__button}
+              
             />
             <label>
               <p className={styles.Text}>or create an account here </p>
             </label>
-            <Link to="/register" className={styles.LoginForm__button}>
+            <Link to="/register" className={styles.RegisterForm__button}>
               <button
                 sx={{
                   backgroundColor: "white",
-                  color: "#F78DA7",
-                  border: "white",
+                  color: "#FFA5BB",
+                  border: "#FFA5BB",
                   cursor: "pointer",
                   fontSize: "inherit",
                   outline: "0",
