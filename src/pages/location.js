@@ -2,8 +2,6 @@
 import { jsx } from "theme-ui"
 import { Grid } from "@theme-ui/components"
 import { Link } from "gatsby"
-import Swal from "sweetalert2"
-import SweetAlert from "sweetalert2-react"
 
 import Layout from "../components/layout"
 import Container from "../components/container"
