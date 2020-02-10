@@ -20,6 +20,7 @@ export const handleLogin = ({ username, password }) => {
     setUser({
       username: `ivana`,
       name: `Ivana`,
+      surname: `Cvitkovic`,
       email: `ivana@fesb.hr`
     });
 
@@ -34,21 +35,6 @@ export const handleLogin = ({ username, password }) => {
   };
 };
 
-export const handleRegister = ({ name, surname, username, email, password }) => {
-  
-  if (username === `null` && password === `null`) {
-   
-
-    return {
-      error: true
-    };
-  }
-
-  return {
-    error: true,
-    message: 'Invalid, try "ivana" & "lozinka"'
-  };
-};
 
 
 export const isLoggedIn = () => {

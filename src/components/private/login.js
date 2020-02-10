@@ -4,7 +4,7 @@ import React, { Component } from "react"
 import { navigate, Link } from "gatsby"
 
 import Container from "../container"
-import styles from "../../../styles/login.module.css"
+import styles from "../../../styles/inputform.module.css"
 
 class Login extends Component {
   state = {

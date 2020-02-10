@@ -61,5 +61,32 @@
   .RegisterForm__button:hover{
     box-shadow: 0 0 5px rgba(0,0,0,0.24)
   }
+  .DeliveryForm {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    max-width: 400px;
+    margin-top: 20px;
+   
+  }
 
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.OrderForm {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+ 
+}
 

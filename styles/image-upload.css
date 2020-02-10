@@ -1,0 +1,37 @@
+.App {
+    text-align: center;
+    border:1px dotted #F78DA7;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    max-width: 400px;
+  }
+
+.input{
+    border:none;
+    background-color: white;
+    color: grey;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    max-width: 400px;
+ 
+}
+.image{
+    margin: auto;
+    padding-bottom: 20px;
+    width: 300px
+}
+
+
+@media only screen and (max-width: 450px) {
+    .input{
+        width: 200px;
+    }
+    
+    .image{
+        width: 200px;
+    }
+  }

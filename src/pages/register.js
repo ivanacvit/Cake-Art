@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Container from "../components/container"
-import styles from "../../styles/login.module.css"
+import styles from "../../styles/inputform.module.css"
 
 export default () => (
   <>

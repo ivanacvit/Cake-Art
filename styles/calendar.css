@@ -1,0 +1,8 @@
+.placeholder{
+  outline: none;
+    background-color:white;
+    border:1px solid grey;
+    font-size: inherit; 
+    border-color: var(--color-gatsby);
+    letter-spacing: tight;
+}
