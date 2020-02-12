@@ -12,43 +12,48 @@ export default class RadioButtonDelivery extends Component {
   render() 
   {
     const { showDelivery } = this.state
+   
     return (
         <>
       <Form>
 
         <Form.Field>
           <Checkbox
-          
-            radio
             label='Yes'
-            name='checkboxRadioGroup'
+            name='checkbox'
             value='this'
             checked={this.state.value === 'this'}
             onChange={this.handleChange}
             onClick={() =>
-              this.setState({ showDelivery: true })
+              this.setState({ showDelivery: true, deliveryFlag: true })
             }
             
           />
         </Form.Field>
         <Form.Field>
           <Checkbox
-            radio
             label='No'
-            name='checkboxRadioGroup'
+            name='checkbox'
             value='that'
-            checked={this.state.value === 'that'}
+            checked={this.state.value === 'that'} 
             onChange={this.handleChange}
             onClick={() =>
-              this.setState({ showDelivery: false })
+              this.setState({ showDelivery: false, deliveryFlag: true})
             }
             
           />
         </Form.Field>
+        
+        
+    
       </Form>
       {showDelivery && (
     <Delivery/>)}
+    
     </>
+    
     )
+    
   }
+  
 }

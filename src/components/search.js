@@ -49,18 +49,7 @@ const BlogIndex = () => {
 
     const filteredData = posts.filter(post => {
       const { keywords, title } = post.node.frontmatter
-      console.log(
-        "Title:",
-        title,
-        title.toLowerCase(),
-        title.toLowerCase().includes(query.toLowerCase())
-      )
-      console.log(
-        "Keywords:",
-        keywords,
-        keywords.toLowerCase(),
-        keywords.toLowerCase().includes(query.toLowerCase())
-      )
+     
       return (
         keywords.toLowerCase().includes(query.toLowerCase()) ||
         title.toLowerCase().includes(query.toLowerCase())

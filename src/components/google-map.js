@@ -12,7 +12,12 @@ const GoogleMap = () => (
     scrolling="no"
     marginHeight="0"
     marginWidth="0"
-
+    sx={{
+      "@media (max-width: 400px)":{
+        width:"200px",
+        height:"200px"
+      }
+    }}
   ></iframe>
 )
 

@@ -23,11 +23,6 @@ module.exports = {
         partiallyActive: true,
       },
       {
-        text: "COMMENT US",
-        path: "/comment",
-        private: true,
-      },
-      {
         text: "LOGIN",
         path: "/private",
         partiallyActive: true,

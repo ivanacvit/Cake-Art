@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import { graphql } from "gatsby"
+import React from "react"
 import Layout from "../components/layout"
 import FilteredGallery from "../components/filtered-gallery"
 import Container from "../components/container"
@@ -13,11 +13,7 @@ const CakeGallery = ({ data }) => {
     <>
       <Layout>
         <Container>
-        
-       
-        <FilteredGallery images={imageFiles.images} />
-
-     
+          <FilteredGallery images={imageFiles.images} />
         </Container>
       </Layout>
     </>

@@ -38,7 +38,7 @@ class Login extends Component {
 
     return (
       <>
-        <Container sx={{pt:[4,5]}}>
+        <Container sx={{ py: [4, 5] }}>
           <form className={styles.LoginForm} onSubmit={this.handleSubmit}>
             <p className={styles.Text} style={style}>
               {this.state.message}

@@ -2,6 +2,7 @@ import React from "react";
 import DatePicker from "react-datepicker";
 import subDays from "date-fns/subDays"
 import "react-datepicker/dist/react-datepicker.css";
+
 import "../../styles/calendar.css"
 
 class Calendar extends React.Component {

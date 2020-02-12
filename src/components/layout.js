@@ -7,7 +7,7 @@ import { css, jsx, Main } from "theme-ui"
 import Navigation from "../components/navigation"
 import Container from "../components/container"
 import Footer from "../components/footer"
-import { getUser, isLoggedIn, logout } from "../../services/authentication"
+import { getUser, isLoggedIn } from "../../services/authentication"
 
 const SiteContainer = props => (
   <div

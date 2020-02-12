@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useThemeUI } from "theme-ui"
+import { jsx } from "theme-ui"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Grid, Card } from "@theme-ui/components"
@@ -7,7 +7,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import "../../styles/image-hover.css"
-import Container from "../components/container"
 
 const ClickableImage = ({ children, ...prop }) => {
   const data = useStaticQuery(graphql`

@@ -19,7 +19,7 @@ const Location = () => {
               marginLeft: "auto",
               marginRight: "auto",
               pb: [3],
-              "@media (max-width: 400px)": {
+              "@media (max-width: 200px)": {
                 marginLeft: "0",
                 marginRight: "0",
               },
@@ -140,7 +140,7 @@ const Location = () => {
               margin: "auto",
               py: [4],
 
-              "@media (max-width: 400px)": {
+              "@media (max-width: 200px)": {
                 display: "none",
               },
             }}

@@ -13,7 +13,7 @@ const ContactInformation = () => {
     
   return (
     <>
-      <form className={styles.DeliveryForm} sx={{pb:[4]}}>
+      <form className={styles.DeliveryForm}>
 
         <input
           type="text"
@@ -37,9 +37,8 @@ const ContactInformation = () => {
         />
 
         <input
-        autoFocus
           type="number"
-          className={styles.input}
+          className={styles.LoginForm__input}
           placeholder="Phone number"
           autoComplete="off"
         />
@@ -53,4 +52,5 @@ const ContactInformation = () => {
 export default ContactInformation
 
 // surname is hardcoded 
+//name and email can be deleted !!!!!!!
 //inq. confir and send button

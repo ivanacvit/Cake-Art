@@ -1,22 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Grid } from "@theme-ui/components"
 import { Component, Fragment } from "react"
-import PropTypes from "prop-types"
-import Img from "gatsby-image"
-import styled from "styled-components"
 import { Dialog } from "@reach/dialog"
 import "@reach/dialog/styles.css"
 import { Link } from "gatsby"
 
 import "../../styles/image-hover.css"
-
-const PreviewButton = styled.button`
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-`
 
 export default class PopUp extends Component {
   constructor(props) {
@@ -24,7 +13,6 @@ export default class PopUp extends Component {
 
     this.state = {
       showLightbox: false,
-      selectedImage: null,
     }
   }
 

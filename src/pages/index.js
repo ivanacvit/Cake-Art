@@ -39,7 +39,7 @@ const Index = ({ data }) => {
               OUR SERVICES
             </h2>
           </ServicesImages >
-        
+
         </Container>
       </Layout>
     

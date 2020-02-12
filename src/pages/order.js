@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "react"
+import { Form, Checkbox } from "semantic-ui-react"
 
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -10,7 +12,31 @@ import styles from "../../styles/inputform.module.css"
 import ImageUpload from "../components/image-upload"
 import ContactInformation from "../components/contact-info"
 
-const Order = () => {
+class Order extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      phone:"",
+      option: '',
+      
+      
+    }
+  }
+
+  handlePhoneChange = evt => {
+    this.setState({ phone: evt.target.value })
+  }
+  
+
+  handleSubmit = () => {
+    alert(`Your order inquiry is sent`);
+  }
+ 
+
+  render() {
+    const { phone, isDisabled } = this.state
+    const enabled = phone.length > 0 && isDisabled===false
+
   return (
     <Layout>
       <Container>
@@ -25,7 +51,6 @@ const Order = () => {
               textAlign: "center",
               fontSize: [2, 3],
               fontWeight: "semibold",
-
               pb: [2],
             }}
           >
@@ -77,7 +102,6 @@ const Order = () => {
             <p
               sx={{
                 color: "#F78DA7",
-                border: "none",
                 letterSpacing: "tight",
                 pt: [3],
               }}
@@ -88,7 +112,6 @@ const Order = () => {
             <p
               sx={{
                 color: "#F78DA7",
-                border: "none",
                 letterSpacing: "tight",
                 pt: [3],
               }}
@@ -99,7 +122,6 @@ const Order = () => {
             <p
               sx={{
                 color: "#F78DA7",
-                border: "none",
                 letterSpacing: "tight",
                 pt: [3],
               }}
@@ -109,15 +131,16 @@ const Order = () => {
             <form className={styles.OrderForm}>
               <input
                 type="number"
-                className={styles.input}
+                className={styles.LoginForm__input}
                 placeholder="Number of cakes"
                 autoComplete="off"
+                value={this.state.phone}
+                onChange={this.handlePhoneChange}
               />
             </form>
             <p
               sx={{
                 color: "#F78DA7",
-                border: "none",
                 letterSpacing: "tight",
                 pt: [3],
               }}
@@ -145,7 +168,6 @@ const Order = () => {
             <p
               sx={{
                 color: "#F78DA7",
-                border: "none",
                 letterSpacing: "tight",
                 pt: [3],
               }}
@@ -172,7 +194,7 @@ const Order = () => {
               <br />
               Have a photo or images that can help us with your custom artwork?
             </p>
-            <ImageUpload/>
+            <ImageUpload />
           </div>
 
           <div sx={{ pb: [5] }}>
@@ -181,14 +203,60 @@ const Order = () => {
                 textAlign: "left",
               }}
             >
-              Contact Information
+              Step 4: Contact Information*
             </h3>
-            <ContactInformation/>
-            </div>
+            <ContactInformation />
+          </div>
+
+          <div sx={{ pb: [5] }}>
+            <h3
+              sx={{
+                textAlign: "left",
+              }}
+            >
+              INQUIRY CONFIRMATION*
+            </h3>
+            <Form
+              sx={{
+                color: "#F78DA7",
+                letterSpacing: "tight",
+                pt: [3],
+              }}
+            >
+              <Checkbox 
+                label=" I understand this is an inquiry form only and that a Cake Art representative will contact me directly to complete and confirm my order." 
+              
+              />
+            </Form>
+          </div>
+          <form  onSubmit={this.handleSubmit}>
+          <input
+            disabled={!enabled}
+            type="submit"
+            value={"Send"}
+            sx={{
+              outline: "0",
+              color: "white",
+              border: "1px solid white",
+              background: "#F78DA7",
+              padding: "12px 28px",
+              borderRadius: "3px",
+              cursor: "pointer",
+              fontSize: "inherit",
+              display: "block",
+              marginTop: "10px",
+              marginBottom: "10px",
+              "&:hover": {
+                boxShadow: "0 0 5px rgba(0,0,0,0.24)",
+              },
+            }}
+          >
+          </input>
+          </form>
         </div>
       </Container>
     </Layout>
   )
 }
-
+}
 export default Order

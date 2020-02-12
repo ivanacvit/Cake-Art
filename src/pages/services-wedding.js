@@ -26,7 +26,7 @@ const ServicesWedding = ({ data }) => {
           <h1
             sx={{
               m: 0,
-              pt: [4, 4, 5],
+              pt: [1, 4, 5],
               fontSize: [4, 6, 7],
               fontWeight: "semibold",
               color: "white",

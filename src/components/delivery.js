@@ -40,7 +40,7 @@ const Delivery = () => {
         />
         <input
           type="number"
-          className={styles.input}
+          className={styles.LoginForm__input}
           placeholder="ZIP Code"
           autoComplete="off"
         />

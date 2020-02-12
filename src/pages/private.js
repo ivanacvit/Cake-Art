@@ -1,14 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import { Router } from "@reach/router"
 import { navigate, Link } from "gatsby"
-
-import { PrivateRoute } from "../components/private/private-route"
 import Login from "../components/private/login"
 import Layout from "../components/layout"
 import Container from "../components/container"
-import Comment from "./comment"
+
 
 import {
   handleLogin,
@@ -23,6 +20,7 @@ const Logout = () => (
       sx={{
         paddingTop: [5],
         textAlign: "center",
+        py: [4, 5]
       }}
     >
       <p
@@ -81,7 +79,7 @@ export default () => (
           <>
            
 
-            <Login private="/comment" handleLogin={handleLogin} />
+            <Login private="/order" handleLogin={handleLogin} />
           </>
         )}
       </Container>

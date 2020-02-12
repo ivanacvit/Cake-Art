@@ -1,76 +1,75 @@
 .LoginForm {
-    display: flex;
-    flex-direction: column;
-    justify-items: stretch;
-    max-width: 400px;
-    margin: 0 auto;
-   
-  }
-  
-  .LoginForm__input {
-    outline: none;
-    background-color:white;
-    border:1px solid grey;
-    font-size: inherit; 
-  }
-  
-  .LoginForm__input,.TextArea:focus {
-    border-color: var(--color-gatsby);
-  }
-  
-  .LoginForm__button,
-  .LoginForm__input {
-    padding: 0.5em;
-    font-size: inherit;
-    margin-top: 0.5rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  .LoginForm__button {
-    outline:0;
-    background-color: #FFA5BB;
-    color: white;
-    border:1px solid white;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: center;
-    font-size: inherit;
-    padding: 12px;
-  }
+.LoginForm__input {
+  outline: none;
+  background-color: white;
+  border: 1px solid grey;
+  font-size: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.LoginForm__button:hover{
-    box-shadow: 0 0 5px rgba(0,0,0,0.24)
-  }
+.LoginForm__input:focus {
+  border: 1px solid #ffa5bb;
+}
 
-  .Text{
-    color: grey;
-    letter-spacing: tight;
-  }
+.LoginForm__button,
+.LoginForm__input {
+  padding: 0.5em;
+  font-size: inherit;
+  margin-top: 0.5rem;
+}
 
-  .RegisterForm__button {
-    outline:0;
-    background-color: white;
-    color: #FFA5BB;
-    border:1px solid #FFA5BB;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: center;
-    font-size: inherit;
-    padding: 12px;
-  }
+.LoginForm__button {
+  outline: 0;
+  background-color: #ffa5bb;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-size: inherit;
+  padding: 12px;
+}
 
-  .RegisterForm__button:hover{
-    box-shadow: 0 0 5px rgba(0,0,0,0.24)
-  }
-  .DeliveryForm {
-    display: flex;
-    flex-direction: column;
-    justify-items: stretch;
-    max-width: 400px;
-    margin-top: 20px;
-   
-  }
+.LoginForm__button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+}
 
-  /* Chrome, Safari, Edge, Opera */
+.Text {
+  color: grey;
+  letter-spacing: tight;
+}
+
+.RegisterForm__button {
+  outline: 0;
+  background-color: white;
+  color: #ffa5bb;
+  border: 1px solid #ffa5bb;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-size: inherit;
+  padding: 12px;
+}
+
+.RegisterForm__button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+}
+.DeliveryForm {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -78,8 +77,8 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance:textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .OrderForm {
@@ -87,6 +86,18 @@ input[type=number] {
   flex-direction: column;
   justify-items: stretch;
   max-width: 400px;
- 
 }
 
+.CheckboxForm {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+}
+
+.ContactUsForm {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+}
