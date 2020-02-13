@@ -1,11 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import { Form } from "semantic-ui-react"
-import { Grid } from "@theme-ui/components"
-import { Dialog } from "@reach/dialog"
-import "@reach/dialog/styles.css"
-import { Link } from "gatsby"
+import { Form, Checkbox } from "semantic-ui-react"
 
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -155,34 +151,29 @@ class Order extends React.Component {
                 WHAT WOULD YOU LIKE TO ORDER?*
               </p>
               <Form>
-                <Grid gap={[0]} columns={[1]}>
-                  <div>
-                    <input
-                      type="checkbox"
-                      onChange={this.handleCheckCake}
-                      defaultChecked={!this.state.checkedCake}
-                    />
-                    <label>Custom Cakes</label>
-                  </div>
+                <Form.Field>
+                  <Checkbox
+                    label="Cake"
+                    onChange={this.handleCheckCake}
+                    defaultChecked={!this.state.checkedCake}
+                  />
+                </Form.Field>
 
-                  <div>
-                    <input
-                      type="checkbox"
-                      onChange={this.handleCheckCupcake}
-                      defaultChecked={!this.state.checkedCupcake}
-                    />
-                    <label>Custom CupCakes</label>
-                  </div>
+                <Form.Field>
+                  <Checkbox
+                    label="Cupcakes"
+                    onChange={this.handleCheckCupcake}
+                    defaultChecked={!this.state.checkedCupcake}
+                  />
+                </Form.Field>
 
-                  <div>
-                    <input
-                      type="checkbox"
-                      onChange={this.handleCheckDessert}
-                      defaultChecked={!this.state.checkedDessert}
-                    />
-                    <label>Custom Desserts</label>
-                  </div>
-                </Grid>
+                <Form.Field>
+                  <Checkbox
+                    label="Desserts"
+                    onChange={this.handleCheckDessert}
+                    defaultChecked={!this.state.checkedDessert}
+                  />
+                </Form.Field>
               </Form>
 
               <p
@@ -286,24 +277,21 @@ class Order extends React.Component {
               >
                 INQUIRY CONFIRMATION*
               </h3>
-              <Form
+              <Form.Field
                 sx={{
                   color: "#F78DA7",
                   letterSpacing: "tight",
                   pt: [3],
                 }}
               >
-                <input
-                  type="checkbox"
+                <Checkbox
+                  label="I understand this is an inquiry form only and that a Cake Art
+                  representative will contact me directly to complete and
+                  confirm my order."
                   onChange={this.handleCheck}
                   defaultChecked={!this.state.checked}
                 />
-                <label>
-                  I understand this is an inquiry form only and that a Cake Art
-                  representative will contact me directly to complete and
-                  confirm my order.{" "}
-                </label>
-              </Form>
+              </Form.Field>
             </div>
 
             <form onSubmit={this.handleSubmit}>
