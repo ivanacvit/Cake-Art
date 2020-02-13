@@ -14,7 +14,7 @@ import SearchIcon from "./search-icon"
 const getCake = imageBase =>
   imageBase
     .split("-")
-    .slice(0, -2)
+    .slice(0, -1)
     .map(item => item.charAt(0).toUpperCase() + item.slice(1))
     .join(" ")
 
@@ -46,6 +46,7 @@ const FilteredGallery = ({ images = [] }) => {
           paddingTop: 2,
           marginBottom: 2,
           borderBottom: `1px solid pink`,
+          mt:[4,5]
         }}
       >
         <label 
@@ -102,6 +103,12 @@ const FilteredGallery = ({ images = [] }) => {
                   key={image.id}
                   fluid={{ ...image.sharp.fluid, aspectRatio: 1 / 1 }}
                 />
+                <p sx={{ mt: 1, mb: 0 }}>
+                
+                  <span sx={{ fontWeight: "medium", color: "grey" }}>
+                    {image.cake}
+                  </span>
+                </p>
                 </div>
               </Card>
             )

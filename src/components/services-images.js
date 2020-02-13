@@ -13,7 +13,7 @@ const ServicesImages = ({ children, ...prop }) => {
     {
       birthdayImage: file(
         relativePath: {
-          eq: "images/birthday/unicorn-birthday-cake-18.jpeg"
+          eq: "images/custom/unicorn-cake-18.jpeg"
         }
       ) {
         sharp: childImageSharp {

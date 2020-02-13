@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 import "../../styles/image-hover.css"
 
-export default class PopUp extends Component {
+export default class PopUp extends Component{
   constructor(props) {
     super(props)
 
@@ -25,9 +25,9 @@ export default class PopUp extends Component {
              
              sx={{
                outline: "0",
-               color: "#F78DA7",
-               border: "1px solid #F78DA7",
-               background: "white",
+               color: "white",
+               border: "1px solid white",
+               background: "#F78DA7",
                padding: "12px 38px",
                borderRadius: "3px",
                cursor: "pointer",

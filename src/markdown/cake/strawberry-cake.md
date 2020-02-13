@@ -2,7 +2,7 @@
 title: "Strawberry Cake"
 image: "../../../content/recipes/cake/strawberry-cake1.jpg"
 date: "December 16, 2018"
-keywords: "If you are a fan of rich and decadent Nutella, then you probably want to make this super simple, 3-ingredient cake."
+keywords: " Strawberry cake made with a thick strawberry reduction in the cake and the frosting."
 ---
 ## Cakes
 ---

@@ -27,7 +27,7 @@ const Footer = () => {
     <ThemeFooter
       sx={{
         bg: "grey",
-        mt: 4,
+        mt: 6,
         pt: [2, 2, 3],
         pb: 2,
         color: "white",
@@ -38,12 +38,13 @@ const Footer = () => {
           width: "100%",
           margin: "0 auto",
           px: [3],
+          pt: [2,5]
         }}
       >
         <Grid gap={[3]} columns={[1, 2, 3]}>
           <div
             sx={{
-              my: 5,
+              my: [4,5],
               mx: "auto",
             }}
           >

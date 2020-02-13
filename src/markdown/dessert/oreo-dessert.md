@@ -2,7 +2,7 @@
 title: "Oreo Dessert"
 image: "../../../content/recipes/dessert/oreo-dessert1.jpg"
 date: "December 15, 2020"
-keywords: "This decadent cheesecake is the perfect dessert to impress your next dinner party crowd. No baking required."
+keywords: "This Chocolate Oreo Dessert recipe is to die for! A moist chocolate cake recipe full of Oreo icing and crushed up Oreos. "
 ---
 ## Desserts
 ---

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "react";
 import { Grid } from "@theme-ui/components"
 import { Link } from "gatsby"
 
@@ -8,12 +9,14 @@ import Container from "../components/container"
 import GoogleMap from "../components/google-map"
 import { isLoggedIn } from "../../services/authentication"
 import PopUp from "../components/popup"
+import Pdf from "../../menu.pdf"
 
 const Location = () => {
+  const ref = React.createRef();
   return (
     <Layout>
       <Container>
-        <Grid gap={[2, 1]} columns={[1, 1, 2, 2]} sx={{ margin: [1, 4] }}>
+        <Grid gap={[2, 1]} columns={[1, 1, 2, 2]} sx={{ margin: [1, 5] }}>
           <div
             sx={{
               marginLeft: "auto",
@@ -106,9 +109,9 @@ const Location = () => {
                 <button
                   sx={{
                     outline: "0",
-                    color: "#F78DA7",
-                    border: "1px solid #F78DA7",
-                    background: "white",
+                    color: "white",
+                    border: "1px solid white",
+                    background: "#F78DA7",
                     padding: "12px 38px",
                     borderRadius: "3px",
                     cursor: "pointer",
@@ -129,11 +132,42 @@ const Location = () => {
                   Submit a custom order inquiry
                 </button>
               </Link>
+
             ) : (
+              
               <PopUp />
             )}
+            <a href={Pdf} sx={{ textDecoration: "none" }}>
+                <button 
+                  sx={{
+                    
+                    outline: "0",
+                    color: "#F78DA7",
+                    border: "1px solid #F78DA7",
+                    background: "white",
+                    padding: "12px 38px",
+                    borderRadius: "3px",
+                    cursor: "pointer",
+                    fontSize: "inherit",
+                    display: "block",
+                    marginTop: "40px",
+                    marginBottom: "0px",
+                    "&:hover": {
+                      boxShadow: "0 0 5px rgba(0,0,0,0.24)",
+                    },
+
+                    "@media (max-width: 700px)": {
+                      padding: "8px 20px",
+                      marginTop: "20px",
+                    },
+                  }}
+                >
+                  Menu&Prices
+                </button>
+              </a>
             
           </div>
+
 
           <div
             sx={{

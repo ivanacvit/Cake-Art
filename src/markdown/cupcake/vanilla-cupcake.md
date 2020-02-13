@@ -2,7 +2,7 @@
 title: "Vanilla CupCake"
 image: "../../../content/recipes/cupcake/vanila-cupcake1.jpg"
 date: "August 13, 2019"
-keywords: "his vanilla cupcake recipe will blow your mind!They're so moist bursting with vanilla flavor, and melt in your mouth!"
+keywords: "This vanilla cupcake recipe will blow your mind!They're so moist bursting with vanilla flavor, and melt in your mouth!"
 ---
 ## CupCakes
 ---

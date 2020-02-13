@@ -3,10 +3,10 @@ import { jsx } from "theme-ui"
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-import styles from "../../styles/inputform.module.css"
-import { getUser } from "../../services/authentication"
+import styles from "../../../styles/inputform.module.css"
+import { getUser } from "../../../services/authentication"
 
-const ContactInformation = () => {
+const ContactInformation = ({...props}) => {
     const surname="Cvitkovic"
     const name=getUser().name
     const email = getUser().email
@@ -41,6 +41,7 @@ const ContactInformation = () => {
           className={styles.LoginForm__input}
           placeholder="Phone number"
           autoComplete="off"
+          {...props}
         />
 
       

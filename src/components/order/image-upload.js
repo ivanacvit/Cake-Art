@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React, { useState } from "react"
 import { Grid } from "@theme-ui/components"
 
-import "../../styles/image-upload.css"
+import "../../../styles/image-upload.css"
 
 function ImageUpload() {
   const [image, setImage] = useState("")
@@ -29,6 +29,20 @@ function ImageUpload() {
   }
 
   return (
+    <>
+    <p
+    sx={{
+      color: "grey",
+      letterSpacing: "tight",
+      pt: [3],
+    }}
+  >
+    {" "}
+    <a sx={{ color: "#F78DA7", border: "none" }}>UPLOAD A PHOTO:</a>
+    <br />
+    Have a photo or images that can help us with your custom artwork?
+  </p>
+
     <div className="app">
       <Grid gap={[3]} columns={[1]}>
         <label
@@ -51,6 +65,7 @@ function ImageUpload() {
         {loading ? <h3>Loading...</h3> : <img src={image} className="image" />}
       </Grid>
     </div>
+    </>
   )
 }
 
