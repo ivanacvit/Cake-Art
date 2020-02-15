@@ -105,7 +105,13 @@ const Location = () => {
             </div>
 
             {isLoggedIn() ? (
-              <Link to="/order" sx={{ textDecoration: "none" }}>
+              <Link to="/order" sx={{ 
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                justifyItems: "stretch",
+                maxWidth: "400px",
+                margin: "0 auto",}}>
                 <button
                   sx={{
                     outline: "0",
@@ -137,7 +143,13 @@ const Location = () => {
               
               <PopUp />
             )}
-            <a href={Pdf} sx={{ textDecoration: "none" }}>
+            <a href={Pdf} sx={{ 
+                              textDecoration: "none",
+                              display: "flex",
+                              flexDirection: "column",
+                              justifyItems: "stretch",
+                              maxWidth: "400px",
+                              margin: "0 auto",}}>
                 <button 
                   sx={{
                     
