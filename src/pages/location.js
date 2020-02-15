@@ -123,7 +123,7 @@ const Location = () => {
                     cursor: "pointer",
                     fontSize: "inherit",
                     display: "block",
-                    marginTop: "40px",
+                    marginTop: [4],
                     marginBottom: "0px",
                     "&:hover": {
                       boxShadow: "0 0 5px rgba(0,0,0,0.24)",
@@ -162,7 +162,7 @@ const Location = () => {
                     cursor: "pointer",
                     fontSize: "inherit",
                     display: "block",
-                    marginTop: "40px",
+                    marginTop: [4],
                     marginBottom: "0px",
                     "&:hover": {
                       boxShadow: "0 0 5px rgba(0,0,0,0.24)",

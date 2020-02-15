@@ -45,6 +45,7 @@ class Login extends Component {
             </p>
 
             <input
+              autoFocus
               type="text"
               className={styles.LoginForm__input}
               placeholder="Username"
@@ -66,7 +67,6 @@ class Login extends Component {
               type="submit"
               value={"Log in"}
               className={styles.LoginForm__button}
-              
             />
             <label>
               <p className={styles.Text}>or create an account here </p>

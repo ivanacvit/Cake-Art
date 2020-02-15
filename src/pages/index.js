@@ -31,6 +31,7 @@ const Index = ({ data }) => {
               sx={{
                 m: 0,
                 pt: [4, 5],
+                pb:[3,1,1],
                 fontSize: [3, 3, 4, 4],
                 fontWeight: "medium",
                 letterSpacing: "tight",
