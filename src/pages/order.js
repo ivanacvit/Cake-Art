@@ -98,7 +98,6 @@ class Order extends React.Component {
               }}
             >
               Use the form below for information and pricing for custom orders.
-              Simply want to add an inscription to a regular menu item?
             </p>
 
             <div sx={{ pb: [5] }}>
