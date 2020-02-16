@@ -97,7 +97,7 @@ class Order extends React.Component {
                 pb: [4],
               }}
             >
-              Use the form below for information and pricing for custom orders.
+              Use the form below for information for custom orders.
             </p>
 
             <div sx={{ pb: [5] }}>
